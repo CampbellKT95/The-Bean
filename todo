@@ -1,0 +1,22 @@
+Creating simple landing page for a cafe (baked goods & coffee)
+
+MOBILE FIRST APPROACH
+
+<Navbar />
+    a. hamburger shifts upon click...why?
+
+    c. Set media query for nav-logo & nav-title for better spacing at larger size
+
+<Landing />
+    Main landing picture -- catchphrase
+
+<Menu />
+    a. Create template, and then iterate through with data in array for each menu subsection (ie bagels, donuts, coffee, etc)
+    b. Pass along relevant, unique information (key [use index], name, description, price) as props
+
+<Reviews />
+    Review section at the end with caroussel functionality
+
+Tidying up:
+a. add hrefs
+b. --
