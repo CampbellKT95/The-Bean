@@ -1,11 +1,6 @@
-Creating simple landing page for a cafe (baked goods & coffee)
-
-MOBILE FIRST APPROACH
 
 <Navbar />
-    a. hamburger shifts upon click...why?
-
-    c. Set media query for nav-logo & nav-title for better spacing at larger size
+    stylize bar; fonts for the whole web page
 
 <Landing />
     Main landing picture -- catchphrase

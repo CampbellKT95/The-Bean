@@ -1,7 +1,9 @@
-import React, {useState} from "react";
-import { FaCoffee } from "react-icons/fa";
-import {FaBars} from "react-icons/fa";
 import "../index.css";
+import React, {useState} from "react";
+import { FaCoffee, FaBars } from "react-icons/fa";
+import {navbarData} from "../data/navbarData";
+
+import List from "./List";
 
 const Navbar = () => {
 
@@ -11,46 +13,31 @@ const Navbar = () => {
         setShowDropdown(!showDropdown);
     } 
 
-
     return <nav className="nav nav-container">
         <FaCoffee className="nav-logo" />
-        <h4>Moonbucks</h4>
+        <h4>The Bean</h4>
 
         {/* for smaller size screens */}
         <FaBars onClick={btnClick} className="nav-hamburger"/>
         <div className={`${showDropdown ? "show-menu" : "hide-menu"}`}>
-        <ul className="hamburger-container">
-            <li className="hamburger-menu-item">
-                <a href="#" alt="menu">Menu</a>
-            </li>
-            <li className="hamburger-menu-item">
-                <a href="#" alt="menu" >Location</a>
-            </li>
-            <li className="hamburger-menu-item">
-                <a href="#" alt="menu" >Contact</a>
-            </li>
-            <li className="hamburger-menu-item">
-                <a href="#" alt="menu" >About us</a>
-            </li>
-        </ul>
-        </div>
+            <ul className="hamburger-container">
+                {navbarData.map((item) => {
+                    return (
+                        <List id={item.id} name={item.name} sizeClass="hamburger-menu-item"/>
+                    )
 
+                })}
+            </ul>
+        </div>
         {/* for larger screens */}
         <ul className="list-container">
-            <li className="nav-item">
-                <a href="#" alt="menu">Menu</a>
-            </li>
-            <li className="nav-item">
-                <a href="#" alt="menu" >Location</a>
-            </li>
-            <li className="nav-item">
-                <a href="#" alt="menu" >Contact</a>
-            </li>
-            <li className="nav-item">
-                <a href="#" alt="menu" >About us</a>
-            </li>
+            {navbarData.map((item) => {
+                return (
+                    <List id={item.id} name={item.name} sizeClass="nav-item"/>
+                )
+
+            })}
         </ul>
-   
     </nav>
 }
 
