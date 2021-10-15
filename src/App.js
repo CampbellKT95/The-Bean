@@ -1,10 +1,18 @@
 import Navbar from "./components/Navbar";
-import "./index.css";
+import Landing from "./components/Landing";
+import Menu from "./components/Menu";
+import "./styles/app.css";
+
 
 function App() {
   return (
     <>
-      <Navbar />
+      <div>
+        <Navbar />
+        <Landing />
+        <Menu />
+        {/* <Reviews /> */}
+      </div>
     </>
   );
 }

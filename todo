@@ -1,17 +1,26 @@
 
-<Navbar />
-    stylize bar; fonts for the whole web page
-
-<Landing />
-    Main landing picture -- catchphrase
-
 <Menu />
-    a. Create template, and then iterate through with data in array for each menu subsection (ie bagels, donuts, coffee, etc)
-    b. Pass along relevant, unique information (key [use index], name, description, price) as props
+    Make media query for desktop stylize
+    Add background pattern
 
 <Reviews />
     Review section at the end with caroussel functionality
 
-Tidying up:
-a. add hrefs
-b. --
+<Contact />
+    Give contact info, location, and link to contact form?
+        Or have contact form right on page
+
+
+
+
+
+// Finishing Touches //
+
+<Navbar />
+    Add additional animations to Navbar
+    Add hrefs (React router?)
+
+
+<Landing />
+    Add contact information somewhere on landing section
+

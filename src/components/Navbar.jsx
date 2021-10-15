@@ -1,4 +1,4 @@
-import "../index.css";
+import "../styles/navbar.css";
 import React, {useState} from "react";
 import { FaCoffee, FaBars } from "react-icons/fa";
 import {navbarData} from "../data/navbarData";
@@ -18,7 +18,12 @@ const Navbar = () => {
         <h4>The Bean</h4>
 
         {/* for smaller size screens */}
-        <FaBars onClick={btnClick} className="nav-hamburger"/>
+
+        {/* experimental onclick to make 90 degree transition */}
+        <FaBars onClick={btnClick} className={`${showDropdown ? "nav-hamburger nav-hamburger-clicked" : "nav-hamburger"}`} />
+
+
+        {/* <FaBars onClick={btnClick} className="nav-hamburger"/> */}
         <div className={`${showDropdown ? "show-menu" : "hide-menu"}`}>
             <ul className="hamburger-container">
                 {navbarData.map((item) => {

@@ -1,0 +1,46 @@
+/* small screen ( > 800px) */
+.menu {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.menu-container {
+  margin: 15px auto;
+  border: 1px solid black;
+  width: 80%;
+}
+
+.menu-item {
+  font-family: "Montserrat", sans-serif;
+}
+
+.menu-title {
+  font-family: "Merriweather", serif;
+}
+
+.coffee-menu-img {
+  display: none;
+}
+
+.breakfast-menu-img {
+  display: none;
+}
+
+.baked-menu-img {
+  display: none;
+}
+
+@media screen and (min-width: 800px) {
+  .coffee-menu-img {
+    display: inline-block;
+    grid-column: 1;
+    grid-row: 1;
+    max-width: 50%;
+  }
+
+  .coffee-menu {
+    grid-column: 1;
+    grid-row: 2;
+  }
+}
