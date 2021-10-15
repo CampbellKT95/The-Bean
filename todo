@@ -1,7 +1,6 @@
 
 <Menu />
-    Make media query for desktop stylize
-    Add background pattern
+    Make media query for desktop stylize: grid currently not working correctly
 
 <Reviews />
     Review section at the end with caroussel functionality
@@ -10,11 +9,16 @@
     Give contact info, location, and link to contact form?
         Or have contact form right on page
 
+<Cart /> 
+    Add ordering functionality with cart & payment via Stripe
+    Will probably need to add counter to each menu item? (useReducer perhaps?)
 
 
 
 
 // Finishing Touches //
+
+Have items appear on scroll
 
 <Navbar />
     Add additional animations to Navbar

@@ -3,20 +3,23 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 1fr);
+  background-image: url("https://cdn.wallpapersafari.com/28/30/qxdGgM.jpg");
 }
 
 .menu-container {
   margin: 15px auto;
-  border: 1px solid black;
+  border: 5px solid black;
   width: 80%;
 }
 
 .menu-item {
   font-family: "Montserrat", sans-serif;
+  font-size: 1.25rem;
 }
 
 .menu-title {
   font-family: "Merriweather", serif;
+  font-size: 2rem;
 }
 
 .coffee-menu-img {
@@ -32,15 +35,48 @@
 }
 
 @media screen and (min-width: 800px) {
-  .coffee-menu-img {
-    display: inline-block;
+  .menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .coffee-menu {
     grid-column: 1;
     grid-row: 1;
     max-width: 50%;
   }
 
-  .coffee-menu {
+  .coffee-menu-img {
+    display: inline-block;
+    grid-column: 2;
+    grid-row: 1;
+    max-width: 50%;
+  }
+
+  .breakfast-menu-img {
+    display: inline-block;
     grid-column: 1;
     grid-row: 2;
+    max-width: 50%;
+  }
+
+  .breakfast-menu {
+    grid-column: 2;
+    grid-row: 2;
+    max-width: 50%;
+  }
+
+  .baked-menu-img {
+    display: inline-block;
+    grid-column: 2;
+    grid-row: 3;
+    max-width: 50%;
+  }
+
+  .baked-menu {
+    grid-column: 1;
+    grid-row: 3;
+    max-width: 50%;
   }
 }
