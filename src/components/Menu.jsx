@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-// import {motion} from "framer-motion";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "../styles/menu.css"
@@ -7,26 +6,25 @@ import Aos from "aos";
 
 const Menu = () => {
 
-    //have image on one side, menu items on another? And flip sides each section? (will need to do media query)
-
-
     useEffect(() => {
         Aos.init({duration: 1000});
     }, [])
 
     return (
         <section className="menu">
-            <div>
-                <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1171&q=80https://images.unsplash.com/photo-1445116572660-236099ec97a0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1171&q=80" alt="coffee-table" className="coffee-menu-img"  data-aos="fade-right" /> 
+            <div className="menu-grid-setup">
+                <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1171&q=80" alt="coffee-table" className="coffee-menu-img"  data-aos="fade-right" /> 
                 <article data-aos="fade-left" className="menu-container coffee-menu">
+
                     <h2 className="menu-title">Coffee</h2>
-                    <p className="menu-item">The Original </p>
+                    <p className="menu-item">The Original</p>
                     <p className="menu-item">Latte</p>
                     <p className="menu-item">Espresso</p>
                     <p className="menu-item">Americano</p>
+                    
                 </article>
             </div>
-            <div>
+            <div className="menu-grid-setup">
                 <img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80" alt="breakfast-img" className="breakfast-menu-img"  data-aos="fade-left"/>
                 <article data-aos="fade-right" className="menu-container breakfast-menu">
                     <h2 className="menu-title">Breakfast</h2>
@@ -37,7 +35,7 @@ const Menu = () => {
                 </article>
 
             </div>
-            <div>
+            <div className="menu-grid-setup">
                 <img src="https://images.unsplash.com/photo-1517433670267-08bbd4be890f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=780&q=80" alt="baked-goods-img" className="baked-menu-img"  data-aos="fade-right"/>
                 <article data-aos="fade-left" className="menu-container baked-menu">
                     <h2 className="menu-title">Baked Goods</h2>

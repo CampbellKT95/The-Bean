@@ -35,48 +35,65 @@
 }
 
 @media screen and (min-width: 800px) {
-  .menu {
+  /* .menu {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
+  } */
+
+  .menu-grid-setup {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .coffee-menu {
     grid-column: 1;
     grid-row: 1;
     max-width: 50%;
+    height: 18rem;
+    margin: 10px auto;
   }
 
   .coffee-menu-img {
     display: inline-block;
     grid-column: 2;
     grid-row: 1;
-    max-width: 50%;
+    max-width: 51%;
+    height: 18rem;
+    margin: auto;
   }
 
   .breakfast-menu-img {
     display: inline-block;
     grid-column: 1;
-    grid-row: 2;
-    max-width: 50%;
+    grid-row: 1;
+    max-width: 51%;
+    height: 18rem;
+    margin: auto;
   }
 
   .breakfast-menu {
     grid-column: 2;
-    grid-row: 2;
+    grid-row: 1;
     max-width: 50%;
+    height: 18rem;
+    margin: auto;
   }
 
   .baked-menu-img {
     display: inline-block;
     grid-column: 2;
-    grid-row: 3;
-    max-width: 50%;
+    grid-row: 1;
+    max-width: 55%;
+    height: 18rem;
+    margin: auto;
   }
 
   .baked-menu {
     grid-column: 1;
-    grid-row: 3;
+    grid-row: 1;
     max-width: 50%;
+    height: 18rem;
+    margin: auto;
   }
 }

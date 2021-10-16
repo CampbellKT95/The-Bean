@@ -1,9 +1,6 @@
 
-<Menu />
-    Make media query for desktop stylize: grid currently not working correctly
-
 <Reviews />
-    Review section at the end with caroussel functionality
+    Add styling
 
 <Contact />
     Give contact info, location, and link to contact form?
@@ -18,7 +15,6 @@
 
 // Finishing Touches //
 
-Have items appear on scroll
 
 <Navbar />
     Add additional animations to Navbar
@@ -27,4 +23,8 @@ Have items appear on scroll
 
 <Landing />
     Add contact information somewhere on landing section
+
+
+<Menu />
+    Add price to each item?
 

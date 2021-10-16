@@ -1,0 +1,23 @@
+/* Remember to mobile first, then add media (min 800) */
+
+.show {
+  display: inline-block;
+}
+
+.hidden {
+  display: none;
+}
+
+.reviews-img {
+  max-width: 15%;
+  height: auto;
+  border-radius: 100%;
+}
+
+.reviews-name {
+  font-family: "Merriweather", serif;
+}
+
+.reviews-quote {
+  font-family: "Montserrat", sans-serif;
+}
