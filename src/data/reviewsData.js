@@ -10,19 +10,19 @@ export const reviewsData = [
         id: 1,
         image: "https://images.unsplash.com/photo-1485893086445-ed75865251e0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=580&q=80",
         name: "Anneka",
-        quote: "I don't even like coffee, yet I come here everyday."
+        quote: "I don't even like coffee, yet here I am."
     },
     {
         id: 2,
         image: "https://images.unsplash.com/photo-1503266980949-bd30d04d0b7a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80",
         name: "Allen",
-        quote: "They have the best pastries in Florida, hands down."
+        quote: "They have the best pastries in Florida."
     },
     {
         id: 3,
         image: "https://images.unsplash.com/photo-1533973427779-4b8c2eb4c3cd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80",
         name: "Lucia",
-        quote: "The only way to start your day off right is with The Bean's breakfast."
+        quote: "The only way to start your day is with The Bean."
     },
     {
         id: 4,

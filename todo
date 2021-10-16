@@ -1,6 +1,5 @@
-
-<Reviews />
-    Add styling
+<About us />
+    Make it clean, sleek, with some longer images a lorem ipsum text?
 
 <Contact />
     Give contact info, location, and link to contact form?
@@ -10,21 +9,20 @@
     Add ordering functionality with cart & payment via Stripe
     Will probably need to add counter to each menu item? (useReducer perhaps?)
 
-
-
-
 // Finishing Touches //
 
-
 <Navbar />
+    Make logo an <a> to link back to landing
+    Change :hover color of nav-items
     Add additional animations to Navbar
     Add hrefs (React router?)
 
-
 <Landing />
     Add contact information somewhere on landing section
-
+    Add button for directly ordering
 
 <Menu />
     Add price to each item?
 
+<Reviews />
+    Make cleaner style?

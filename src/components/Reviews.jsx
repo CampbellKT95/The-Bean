@@ -1,10 +1,7 @@
 import React, {useState} from "react";
 import {reviewsData} from "../data/reviewsData";
-import { FaAngleDoubleLeft, FaAngleDoubleRight } from "react-icons/fa";
+import { FaAngleDoubleLeft, FaAngleDoubleRight, FaYelp, FaStar } from "react-icons/fa";
 import "../styles/reviews.css";
-
-
-//add styling to review section
 
 const Reviews = () => {
 
@@ -30,18 +27,21 @@ const Reviews = () => {
     }
 
     return (
-        <section>
+        <section className="reviews-container">
+            <a href="https://www.yelp.com/" className="yelp"> <FaYelp /> </a>
+            <h4 className="yelp-text">Find more reviews on yelp</h4>
 
             <div key={currentDisplay.id} className="show">
                 <img src={currentDisplay.image} alt={currentDisplay.name} className="reviews-img" />
                 <h4 className="reviews-name">{currentDisplay.name}</h4>
                 <p className="reviews-quote">{currentDisplay.quote}</p>
-                <button onClick={nextReview}><FaAngleDoubleLeft /></button>
-                <button onClick={prevReview}><FaAngleDoubleRight /></button>
+                <button className="next-btn" onClick={nextReview}><FaAngleDoubleLeft /></button>
+                <button className="prev-btn" onClick={prevReview}><FaAngleDoubleRight /></button>
             </div>
 
+            <a href="https://guide.michelin.com/en/restaurants" className="michelin-star"> <FaStar /> </a>
+            <h4 className="michelin-star-text">Our Michelin stars</h4>
         </section>
-
     )
 }
 
