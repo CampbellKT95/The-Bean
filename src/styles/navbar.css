@@ -73,6 +73,12 @@
   text-decoration: none;
 }
 
+.hamburger-menu-item a:hover {
+  transition: all 0.1s linear;
+  font-size: 1.5rem;
+  color: #3282b8;
+}
+
 .show-menu {
   background-color: black;
   position: absolute;

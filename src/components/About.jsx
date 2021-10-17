@@ -4,7 +4,7 @@ import "../styles/about.css"
 const About = () => {
 
     return (
-        <section className="about">
+        <section className="about" id="About">
             <div className="about-text-container" data-aos="fade-right">
                 <h4> Our family </h4>
                 <article className="about-text">

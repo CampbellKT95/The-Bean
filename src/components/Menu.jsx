@@ -10,7 +10,7 @@ const Menu = () => {
     }, [])
 
     return (
-        <section className="menu">
+        <section className="menu" id="Menu">
             <div className="menu-grid-setup">
                 <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1171&q=80" alt="coffee-table" className="coffee-menu-img"  data-aos="fade-right" /> 
                 <article data-aos="fade-left" className="menu-container coffee-menu">

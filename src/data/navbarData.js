@@ -10,7 +10,7 @@ export const navbarData = [
     },
     {
         id: 3,
-        name: "About us"
+        name: "About"
     },
     {
         id: 4,

@@ -64,29 +64,31 @@
 
 @media screen and (min-width: 800px) {
   .contact-container {
-    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-rows: 0.5fr 1fr 0.75fr;
   }
 
   .contact-title {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 
   .phone {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .address {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .hours {
     grid-row: 2;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .footer-order-btn {
     font-size: 1.5rem;
     width: 40%;
     height: 40%;
+    margin-top: 20px;
+    cursor: pointer;
   }
 }

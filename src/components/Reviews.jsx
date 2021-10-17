@@ -32,7 +32,7 @@ const Reviews = () => {
     }
 
     return (
-        <section className="reviews-container">
+        <section className="reviews-container" id="Reviews">
             <div data-aos="fade-up">
                 <a href="https://www.yelp.com/" className="yelp"> <FaYelp /> 
                 </a>

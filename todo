@@ -1,6 +1,16 @@
-<Cart /> 
-    Add ordering functionality with cart & payment via Stripe
+**
+Create menuData: include a product id, name & price
+**
+
+<Order /> 
+    use React-Router:
+        on button click, take user to a simple menu site where all ordering 
+        functionality takes place
+
     Will probably need to add counter to each menu item? (useReducer perhaps?)
+
+    Create menu data list, with an inner list containing objects with name,
+    price & product id
 
 // Finishing Touches //
 
@@ -8,18 +18,12 @@ General:
 Make the black primary color slightly lighter, and change all it in all locations:
 Navbar, Reviews
 
-<Navbar />
-    Make logo an <a> to link back to landing
-    Change :hover color of nav-items
-    Add additional animations to Navbar
-    Add hrefs (React router?)
-
 <Landing />
-    Add contact information somewhere on landing section
     Add btn onClick for ordering
+        btn currently cannot be clicked, something is overtop of it
 
 <Menu />
-    Add price to each item?
+    Create menu via looping through. Need menu list
 
 <Reviews />
     Make cleaner style?
