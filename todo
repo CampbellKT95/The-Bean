@@ -1,9 +1,5 @@
-<About us />
-    Make it clean, sleek, with some longer images a lorem ipsum text?
-
 <Contact />
-    Give contact info, location, and link to contact form?
-        Or have contact form right on page
+    Give contact info & location as a bottom navbar on Navbar component?
 
 <Cart /> 
     Add ordering functionality with cart & payment via Stripe
@@ -11,8 +7,13 @@
 
 // Finishing Touches //
 
+General:
+Make the black primary color slightly lighter, and change all it in all locations:
+Navbar, Reviews
+
 <Navbar />
     Make logo an <a> to link back to landing
+    Make Navbar sticky?
     Change :hover color of nav-items
     Add additional animations to Navbar
     Add hrefs (React router?)
@@ -26,3 +27,6 @@
 
 <Reviews />
     Make cleaner style?
+
+<About us />
+    Clean up css, especially the grid

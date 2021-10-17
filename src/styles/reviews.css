@@ -102,11 +102,12 @@
   }
 
   .yelp {
+    display: inline-block;
     grid-row: 1;
     grid-column: 1;
     font-size: 5rem;
-    margin: auto;
     color: #ff1a1a;
+    margin-top: 5rem;
   }
 
   .yelp-text {
@@ -115,16 +116,20 @@
     color: white;
     font-size: 1.5rem;
     height: 2rem;
+    margin-top: 15%;
 
     font-family: "Montserrat", sans-serif;
   }
 
   .michelin-star {
+    display: inline-block;
     grid-row: 1;
     grid-column: 3;
     font-size: 5rem;
     margin: auto;
     color: #bd2333;
+    margin-top: 5rem;
+    justify-content: center;
   }
 
   .michelin-star-text {
@@ -133,6 +138,7 @@
     color: white;
     font-size: 1.5rem;
     height: 2rem;
+    margin-top: 15%;
 
     font-family: "Montserrat", sans-serif;
   }

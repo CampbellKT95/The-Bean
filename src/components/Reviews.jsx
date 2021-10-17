@@ -1,9 +1,14 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import {reviewsData} from "../data/reviewsData";
 import { FaAngleDoubleLeft, FaAngleDoubleRight, FaYelp, FaStar } from "react-icons/fa";
+import Aos from "aos";
 import "../styles/reviews.css";
 
 const Reviews = () => {
+
+    useEffect(() => {
+        Aos.init({duration: 1000});
+    }, [])
 
     const [currentReview, setCurrentReview] = useState(0);
 
@@ -28,10 +33,13 @@ const Reviews = () => {
 
     return (
         <section className="reviews-container">
-            <a href="https://www.yelp.com/" className="yelp"> <FaYelp /> </a>
-            <h4 className="yelp-text">Find more reviews on yelp</h4>
+            <div data-aos="fade-up">
+                <a href="https://www.yelp.com/" className="yelp"> <FaYelp /> 
+                </a>
+                <h4 className="yelp-text">Find more reviews on yelp</h4>
+            </div>
 
-            <div key={currentDisplay.id} className="show">
+            <div key={currentDisplay.id} className="show" data-aos="fade-up">
                 <img src={currentDisplay.image} alt={currentDisplay.name} className="reviews-img" />
                 <h4 className="reviews-name">{currentDisplay.name}</h4>
                 <p className="reviews-quote">{currentDisplay.quote}</p>
@@ -39,8 +47,10 @@ const Reviews = () => {
                 <button className="prev-btn" onClick={prevReview}><FaAngleDoubleRight /></button>
             </div>
 
-            <a href="https://guide.michelin.com/en/restaurants" className="michelin-star"> <FaStar /> </a>
-            <h4 className="michelin-star-text">Our Michelin stars</h4>
+            <div data-aos="fade-up">
+                <a href="https://guide.michelin.com/en/restaurants" className="michelin-star"> <FaStar /> </a>
+                <h4 className="michelin-star-text">Our Michelin stars</h4>
+            </div>
         </section>
     )
 }

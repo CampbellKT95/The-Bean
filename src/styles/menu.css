@@ -3,7 +3,7 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 1fr);
-  background-image: url("https://cdn.wallpapersafari.com/28/30/qxdGgM.jpg");
+  background-image: url("https://images.unsplash.com/photo-1550895030-823330fc2551?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=387&q=80");
 }
 
 .menu-container {
@@ -61,6 +61,7 @@
     max-width: 51%;
     height: 18rem;
     margin: auto;
+    border: 5px solid black;
   }
 
   .breakfast-menu-img {
@@ -70,6 +71,7 @@
     max-width: 51%;
     height: 18rem;
     margin: auto;
+    border: 5px solid black;
   }
 
   .breakfast-menu {
@@ -87,6 +89,7 @@
     max-width: 55%;
     height: 18rem;
     margin: auto;
+    border: 5px solid black;
   }
 
   .baked-menu {
