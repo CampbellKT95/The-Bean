@@ -1,0 +1,92 @@
+.contact-container {
+  background-color: black;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  margin: auto;
+}
+
+.contact-title {
+  grid-row: 1;
+  grid-column: 2;
+  font-family: "Merriweather", serif;
+}
+
+.phone {
+  grid-row: 2;
+  grid-column: 1;
+  margin-left: 30%;
+  font-size: 1.25rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.address {
+  grid-row: 2;
+  grid-column: 3;
+  font-size: 1.25rem;
+  font-family: "Montserrat", sans-serif;
+
+  color: white;
+}
+
+.address a {
+  position: relative;
+  z-index: 1;
+  text-decoration: none;
+  color: white;
+}
+
+.hours {
+  grid-row: 2;
+  grid-column: 1 / -1;
+  font-size: 1.25rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.footer-order-btn {
+  grid-row: 3;
+  grid-column: 2;
+  width: 70%;
+  margin: auto;
+  margin-bottom: 20%;
+  padding: 5px 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.25rem;
+  font-weight: bold;
+  background: white;
+  border: none;
+  border-radius: 5px;
+  color: black;
+  position: relative;
+  z-index: 1;
+}
+
+@media screen and (min-width: 800px) {
+  .contact-container {
+    grid-template-rows: 1fr 2fr 1fr;
+  }
+
+  .contact-title {
+    font-size: 3rem;
+  }
+
+  .phone {
+    font-size: 2rem;
+  }
+
+  .address {
+    font-size: 2rem;
+  }
+
+  .hours {
+    grid-row: 2;
+    font-size: 2rem;
+  }
+
+  .footer-order-btn {
+    font-size: 1.5rem;
+    width: 40%;
+    height: 40%;
+  }
+}

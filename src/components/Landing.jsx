@@ -1,18 +1,20 @@
 import React from "react";
-import "../styles/landing.css"
+import "../styles/landing.css";
 
-const Landing = () => {
-
-    //instead of background image, have a background pattern and include images on the page? Or just make it position absolute
+const Landing = ({clearDropdown}) => {
 
     return (
-        <main className="landing">
-            <section className="overlay">
-                <h2 className="landing-title-text">The Bean</h2>
-                <h4 className="landing-sub-text">Experience coffee as it was meant to be</h4>
-            </section>
+        <div onClick={clearDropdown}>
+            <main className="landing">
+                <section className="overlay">
+                    <h2 className="landing-title-text">The Bean</h2>
+                    <h4 className="landing-sub-text">Experience coffee as it was meant to be</h4>
+                    <button className="order-btn">Order Pickup</button>
+                </section>
 
-        </main>
+            </main>           
+        </div>
+
 
     )
 }

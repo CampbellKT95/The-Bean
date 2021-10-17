@@ -1,6 +1,3 @@
-<Contact />
-    Give contact info & location as a bottom navbar on Navbar component?
-
 <Cart /> 
     Add ordering functionality with cart & payment via Stripe
     Will probably need to add counter to each menu item? (useReducer perhaps?)
@@ -13,14 +10,13 @@ Navbar, Reviews
 
 <Navbar />
     Make logo an <a> to link back to landing
-    Make Navbar sticky?
     Change :hover color of nav-items
     Add additional animations to Navbar
     Add hrefs (React router?)
 
 <Landing />
     Add contact information somewhere on landing section
-    Add button for directly ordering
+    Add btn onClick for ordering
 
 <Menu />
     Add price to each item?

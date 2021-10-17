@@ -1,8 +1,8 @@
 import "../styles/navbar.css";
 import React, {useState} from "react";
+import Landing from "./Landing";
 import { FaCoffee, FaBars } from "react-icons/fa";
 import {navbarData} from "../data/navbarData";
-
 import List from "./List";
 
 const Navbar = () => {
@@ -13,37 +13,44 @@ const Navbar = () => {
         setShowDropdown(!showDropdown);
     } 
 
-    return <nav className="nav nav-container">
-        <FaCoffee className="nav-logo" />
-        <h4>The Bean</h4>
-
-        {/* for smaller size screens */}
-
-        {/* experimental onclick to make 90 degree transition */}
-        <FaBars onClick={btnClick} className={`${showDropdown ? "nav-hamburger nav-hamburger-clicked" : "nav-hamburger"}`} />
+    const clearDropdown = () => {
+        setShowDropdown(false);
+    }
 
 
-        {/* <FaBars onClick={btnClick} className="nav-hamburger"/> */}
-        <div className={`${showDropdown ? "show-menu" : "hide-menu"}`}>
-            <ul className="hamburger-container">
+    return <>
+        <nav className="nav nav-container" >
+            <FaCoffee className="nav-logo" />
+            <h4>The Bean</h4>
+
+            {/* for smaller size screens */}
+            <FaBars onClick={btnClick} className={`${showDropdown ? "nav-hamburger nav-hamburger-clicked" : "nav-hamburger"}`} />
+
+
+            {/* <FaBars onClick={btnClick} className="nav-hamburger"/> */}
+            <div className={`${showDropdown ? "show-menu" : "hide-menu"}`}>
+                <ul className="hamburger-container">
+                    {navbarData.map((item) => {
+                        return (
+                            <List id={item.id} name={item.name} sizeClass="hamburger-menu-item"/>
+                        )
+
+                    })}
+                </ul>
+            </div>
+            {/* for larger screens */}
+            <ul className="list-container">
                 {navbarData.map((item) => {
                     return (
-                        <List id={item.id} name={item.name} sizeClass="hamburger-menu-item"/>
+                        <List id={item.id} name={item.name} sizeClass="nav-item"/>
                     )
 
                 })}
             </ul>
-        </div>
-        {/* for larger screens */}
-        <ul className="list-container">
-            {navbarData.map((item) => {
-                return (
-                    <List id={item.id} name={item.name} sizeClass="nav-item"/>
-                )
+        </nav>
 
-            })}
-        </ul>
-    </nav>
+        <Landing clearDropdown={clearDropdown}/>
+    </>
 }
 
 export default Navbar;
