@@ -39,7 +39,7 @@ const Reviews = () => {
                 <h4 className="yelp-text">Find more reviews on yelp</h4>
             </div>
 
-            <div key={currentDisplay.id} className="show" data-aos="fade-up">
+            <div key={currentDisplay.id} className="show">
                 <img src={currentDisplay.image} alt={currentDisplay.name} className="reviews-img" />
                 <h4 className="reviews-name">{currentDisplay.name}</h4>
                 <p className="reviews-quote">{currentDisplay.quote}</p>

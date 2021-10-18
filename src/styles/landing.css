@@ -36,6 +36,8 @@
   border-radius: 5px;
   color: black;
   margin-top: 3rem;
-  padding: 5px;
+  padding: 10px;
   cursor: pointer;
+  position: relative;
+  z-index: 2;
 }

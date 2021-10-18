@@ -1,10 +1,7 @@
 <Order />
+    Order btn on landing unclickable currently; figure out what is blocking it
 
-    use React-Router:
-        on button click, take user to a simple menu site where all ordering
-        functionality takes place
-
-    Create a list for users to add their order to
+    Create a list for users to add their order to with useState
 
 // Finishing Touches //
 

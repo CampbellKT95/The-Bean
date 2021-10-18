@@ -1,3 +1,4 @@
+import {Link} from "react-router-dom";
 import "../styles/contact.css"
 
 const Contact = () => {
@@ -12,7 +13,7 @@ const Contact = () => {
                 <h4>Mon-Sun</h4>
                 <p>6am - 9pm</p>
             </div>
-            <button className="footer-order-btn">Order Pickup</button>
+            <Link to="/order" className="footer-order-link"><button className="footer-order-btn">Order Pickup</button></Link>
 
         </footer>
     </>
