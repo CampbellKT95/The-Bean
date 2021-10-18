@@ -1,16 +1,10 @@
-**
-Create menuData: include a product id, name & price
-**
+<Order />
 
-<Order /> 
     use React-Router:
-        on button click, take user to a simple menu site where all ordering 
+        on button click, take user to a simple menu site where all ordering
         functionality takes place
 
-    Will probably need to add counter to each menu item? (useReducer perhaps?)
-
-    Create menu data list, with an inner list containing objects with name,
-    price & product id
+    Create a list for users to add their order to
 
 // Finishing Touches //
 
