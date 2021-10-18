@@ -1,5 +1,4 @@
 <Order />
-    Order btn on landing unclickable currently; figure out what is blocking it
 
     Create a list for users to add their order to with useState
 

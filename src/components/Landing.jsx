@@ -11,7 +11,7 @@ const Landing = ({clearDropdown}) => {
                 <section className="overlay">
                     <h2 className="landing-title-text">The Bean</h2>
                     <h4 className="landing-sub-text">Experience coffee as it was meant to be</h4>
-                    <Link to="/order"><button className="order-btn">Order Pickup</button></Link>
+                    <Link to="/order" classname="landing-link"><button className="order-btn">Order Pickup</button></Link>
                 </section>
 
             </main>           
