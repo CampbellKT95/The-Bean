@@ -2,6 +2,8 @@ import React, {useState, useEffect} from "react";
 import { menuData } from "../data/menuData";
 import "../styles/order.css";
 
+import Navbar from "./Navbar";
+
 
 const Order = () => {
 
@@ -42,7 +44,9 @@ const Order = () => {
     }
 
     return <>
-        <h1 className="order-title">Order Section</h1>
+        <nav className="order-nav">
+            <h1 className="order-title">Order Online</h1>
+        </nav>
 
         <section className="order-container">
             <div className="coffee-order-container">
@@ -73,11 +77,11 @@ const Order = () => {
                 {orderList.map((item) => {
                     return <p className="current-order-item">{item}</p>
                 })}
-
-
             </div>
-
         </section>
+        <footer className="order-nav-bottom">
+            <h1 className="order-title">Back</h1>
+        </footer>
     </>
 }
 

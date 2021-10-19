@@ -1,7 +1,6 @@
 <Order />
-    Create a currentList window for user; display both state values
-    add a clearList function
-        Make the cart toggleable? 
+
+    Make back a Link tag with React Router
 
     Set up Stripe API to handle payments
 
