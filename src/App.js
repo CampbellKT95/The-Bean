@@ -1,15 +1,21 @@
+import React, {useState} from "react";
 import Navbar from "./components/Navbar";
 import Menu from "./components/Menu";
 import Reviews from "./components/Reviews";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Order from "./components/Order";
+import Confirmation from "./components/Confirmation";
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 
 import "./styles/app.css";
 
 
 function App() {
+
+    const [orderList, setOrderList] = useState([]);
+    const [bill, setBill] = useState(0)
+
   return (
     <Router >
       <div>
@@ -23,7 +29,10 @@ function App() {
             <Contact />
           </Route>
           <Route path="/order">
-            <Order />
+            <Order orderList={orderList} setOrderList={setOrderList} bill={bill} setBill={setBill}/>
+          </Route>
+          <Route path="/confirmation">
+            <Confirmation orderList={orderList} bill={bill} />
           </Route>
 
         </Switch>

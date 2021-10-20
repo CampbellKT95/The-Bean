@@ -1,14 +1,13 @@
 import React, {useState, useEffect} from "react";
 import { menuData } from "../data/menuData";
 import "../styles/order.css";
+import {Link} from "react-router-dom";
 
-import Navbar from "./Navbar";
 
+const Order = ({orderList, setOrderList, bill, setBill}) => {
 
-const Order = () => {
-
-    const [orderList, setOrderList] = useState([]);
-    const [bill, setBill] = useState(0)
+    // const [orderList, setOrderList] = useState([]);
+    // const [bill, setBill] = useState(0)
 
 
     const handleClick = (e) => {
@@ -48,6 +47,7 @@ const Order = () => {
             <h1 className="order-title">Order Online</h1>
         </nav>
 
+
         <section className="order-container">
             <div className="coffee-order-container">
                 <h2>Coffee</h2>
@@ -70,18 +70,19 @@ const Order = () => {
                 })}
             </div>
 
+            <Link to="/" className="back-link"><h1 className="back-title">Back</h1></Link>
             <div className="current-order">
                 <h4 className="current-order-title">Your Cart: ${bill}</h4>
-                <button className="order-clear" onClick={clearOrder}>Clear</button>
-
+                <div className="current-order-container">
+                    <button className="order-clear" onClick={clearOrder}>Clear</button>
+                    <Link to="/confirmation"><button className="purchase-btn">Purchase</button></Link>
+                </div>
+                
                 {orderList.map((item) => {
                     return <p className="current-order-item">{item}</p>
                 })}
             </div>
         </section>
-        <footer className="order-nav-bottom">
-            <h1 className="order-title">Back</h1>
-        </footer>
     </>
 }
 

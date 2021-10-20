@@ -1,0 +1,18 @@
+.confirmation {
+  margin: auto;
+  margin-top: 5rem;
+  width: 30%;
+  border: 5px solid black;
+}
+
+.confirmation-title {
+  font-size: 2rem;
+}
+
+.confirmation-bill {
+  font-size: 1.5rem;
+}
+
+.confirmation-item {
+  font-size: 1.25rem;
+}

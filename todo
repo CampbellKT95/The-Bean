@@ -1,8 +1,10 @@
-<Order />
+<Confirmation />
+    load the Stripe API components there
+        current walkthrough: https://www.youtube.com/watch?v=XKWJFpZYVAQ: 12:35
 
-    Make back a Link tag with React Router
+    Add a success / failure page for payment
 
-    Set up Stripe API to handle payments
+    Stylize order button (make grid along with the back button)
 
 // Finishing Touches //
 
@@ -22,3 +24,8 @@ Navbar, Reviews
 
 <About us />
     Clean up css, especially the grid
+
+<Order />
+    Make it so if you click the same item multiple times, it adds a numerical value to keep list short?
+
+REFACTOR, especially the CSS.
