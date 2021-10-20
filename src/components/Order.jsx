@@ -75,7 +75,7 @@ const Order = ({orderList, setOrderList, bill, setBill}) => {
                 <h4 className="current-order-title">Your Cart: ${bill}</h4>
                 <div className="current-order-container">
                     <button className="order-clear" onClick={clearOrder}>Clear</button>
-                    <Link to="/confirmation"><button className="purchase-btn">Purchase</button></Link>
+                    <Link to="/stripecontainer"><button className="purchase-btn">Purchase</button></Link>
                 </div>
                 
                 {orderList.map((item) => {

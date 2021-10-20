@@ -1,6 +1,11 @@
 <Confirmation />
     load the Stripe API components there
-        current walkthrough: https://www.youtube.com/watch?v=XKWJFpZYVAQ: 12:35
+        current walkthrough: https://www.youtube.com/watch?v=XKWJFpZYVAQ: 20:27
+
+        when complete, make stripe code in Confirmation its own components
+
+
+
 
     Add a success / failure page for payment
 

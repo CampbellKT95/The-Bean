@@ -9,6 +9,7 @@ import Confirmation from "./components/Confirmation";
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 
 import "./styles/app.css";
+import StripeContainer from "./components/StripeContainer";
 
 
 function App() {
@@ -31,8 +32,8 @@ function App() {
           <Route path="/order">
             <Order orderList={orderList} setOrderList={setOrderList} bill={bill} setBill={setBill}/>
           </Route>
-          <Route path="/confirmation">
-            <Confirmation orderList={orderList} bill={bill} />
+          <Route path="/stripecontainer">
+            <StripeContainer orderList={orderList} bill={bill} />
           </Route>
 
         </Switch>
