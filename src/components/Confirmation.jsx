@@ -40,11 +40,10 @@ const Confirmation = ({orderList, bill}) => {
             try {
                 const {id} = paymentMethod;
 
-                //will need to edit the post below for correct post
-                const response = await axios.post("http://localhost:3000/payment", {
+                const response = await axios.post("http://localhost:4000/payment", {
 
-                    // payment in cents, will have to change this with state value
-                    amount: 1000,
+                    // payment in cents
+                    amount: bill * 100,
                     id: id
                 })
                 
@@ -84,8 +83,6 @@ const Confirmation = ({orderList, bill}) => {
             <h2>Payment complete!</h2>
         </div>
         }
-
-        {/* add a back button */}
 
     </section>
 }

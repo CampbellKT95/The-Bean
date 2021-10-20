@@ -1,15 +1,8 @@
 <Confirmation />
-    load the Stripe API components there
-        current walkthrough: https://www.youtube.com/watch?v=XKWJFpZYVAQ: 20:27
 
-        when complete, make stripe code in Confirmation its own components
+    try uploading to github, but double check that gitignore ignores the env passcode
 
-
-
-
-    Add a success / failure page for payment
-
-    Stylize order button (make grid along with the back button)
+    Will need to generate an order number for people to pick up their stuff
 
 // Finishing Touches //
 
