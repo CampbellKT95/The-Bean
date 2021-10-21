@@ -5,7 +5,6 @@ import Reviews from "./components/Reviews";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Order from "./components/Order";
-import Confirmation from "./components/Confirmation";
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 
 import "./styles/app.css";

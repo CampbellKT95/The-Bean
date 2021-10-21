@@ -1,0 +1,2 @@
+concurrently script to run both front/back end:
+        "start": "concurrently \"react-scripts start\" \"cd server && node index.js\"" ,
