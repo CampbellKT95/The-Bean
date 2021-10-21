@@ -14,9 +14,9 @@ This project is a full website for an imaginary cafe using React.js. The reason 
 
 # RUNNING THE PROJECT
 
-Live version:
+_Live version_:
 
-//INSERT HERE ONCE DEPLOYED
+https://the-bean-cafe.herokuapp.com/
 
 # From the repo
 

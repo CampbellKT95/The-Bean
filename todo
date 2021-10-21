@@ -1,5 +1,7 @@
 
-Deploy with Heroku
 
-Finish README
-    Still need to add live url to it, then should be complete
+Change title 
+
+Change Favicon
+
+Figure out how to connect server file to heroku to enable stripe functionality
