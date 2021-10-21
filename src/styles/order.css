@@ -46,6 +46,10 @@
   border-radius: 5px;
 }
 
+.coffee-order {
+  cursor: pointer;
+}
+
 .breakfast-order-container {
   grid-column: 1;
   grid-row: 2;
@@ -54,12 +58,20 @@
   border-radius: 5px;
 }
 
+.breakfast-order {
+  cursor: pointer;
+}
+
 .baked-goods-order-container {
   grid-column: 1;
   grid-row: 3;
 
   border: 1px solid black;
   border-radius: 5px;
+}
+
+.baked-goods-order {
+  cursor: pointer;
 }
 
 .current-order {
