@@ -21,7 +21,7 @@ const CARD_OPTIONS = {
             color: "#ffc7ee"
         }
     }
-}
+};
 
 const Confirmation = ({orderList, bill}) => {
     const [success, setSuccess] = useState(false);
@@ -41,6 +41,8 @@ const Confirmation = ({orderList, bill}) => {
                 const {id} = paymentMethod;
 
                 const response = await axios.post("http://localhost:4000/payment", {
+
+                // "https://the-bean-cafe.herokuapp.com/payment"
 
                     // payment in cents
                     amount: bill * 100,
