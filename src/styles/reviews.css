@@ -1,7 +1,6 @@
-/* Remember to mobile first, then add media (min 800) */
 .reviews-container {
   background-color: black;
-  color: white;
+
   padding: 20px 0;
   height: 50rem;
 }
@@ -9,39 +8,46 @@
 .yelp {
   grid-row: 1;
   grid-column: 1;
-  font-size: 5rem;
+
   margin: auto;
+
+  font-size: 5rem;
   color: #ff1a1a;
 }
 
 .yelp-text {
   grid-row: 1;
   grid-column: 1;
-  color: white;
-  font-size: 1.5rem;
+
   height: 2rem;
   padding-bottom: 20px;
   margin-top: 0;
 
+  color: #d9cab3;
+  font-size: 1.5rem;
   font-family: "Montserrat", sans-serif;
 }
 
 .michelin-star {
   grid-row: 1;
   grid-column: 1;
-  font-size: 5rem;
+
   margin: auto;
+
+  font-size: 5rem;
   color: #bd2333;
 }
 
 .michelin-star-text {
   grid-row: 1;
   grid-column: 1;
-  color: white;
-  font-size: 1.5rem;
+
   height: 2rem;
   padding-bottom: 20px;
   margin-top: 0;
+
+  color: #d9cab3;
+  font-size: 1.5rem;
 
   font-family: "Montserrat", sans-serif;
 }
@@ -56,43 +62,55 @@
 
 .reviews-img {
   max-height: 15rem;
+
   border-radius: 100%;
-  /* padding-top: 20px; */
+  border: 5px solid #d9cab3;
 }
 
 .reviews-name {
   font-family: "Merriweather", serif;
   font-size: 1.5rem;
+  color: #d9cab3;
 }
 
 .reviews-quote {
   font-family: "Montserrat", sans-serif;
   font-size: 1.25rem;
+  color: white;
 }
 
 .next-btn {
-  color: white;
+  padding-bottom: 30px;
+
   background: transparent;
   border: none;
+
   font-size: 1.5rem;
-  padding-bottom: 30px;
+  color: #d9cab3;
+
+  cursor: pointer;
 }
 
 .prev-btn {
-  color: white;
   background: transparent;
   border: none;
+
   font-size: 1.5rem;
+  color: #d9cab3;
+
+  cursor: pointer;
 }
 
-/* larger screens */
 @media screen and (min-width: 800px) {
   .reviews-container {
-    background-color: black;
-    height: 26rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
+
+    height: 26rem;
+
+    background-color: black;
+
     text-align: center;
   }
 
@@ -102,43 +120,53 @@
   }
 
   .yelp {
-    display: inline-block;
     grid-row: 1;
     grid-column: 1;
+
+    display: inline-block;
+
+    margin-top: 5rem;
+
     font-size: 5rem;
     color: #ff1a1a;
-    margin-top: 5rem;
   }
 
   .yelp-text {
     grid-row: 1;
     grid-column: 1;
-    color: white;
-    font-size: 1.5rem;
+
     height: 2rem;
     margin-top: 15%;
 
+    color: #d9cab3;
+    font-size: 1.5rem;
     font-family: "Montserrat", sans-serif;
   }
 
   .michelin-star {
-    display: inline-block;
     grid-row: 1;
     grid-column: 3;
-    font-size: 5rem;
+
+    display: inline-block;
+
     margin: auto;
-    color: #bd2333;
     margin-top: 5rem;
     justify-content: center;
+
+    font-size: 5rem;
+
+    color: #bd2333;
   }
 
   .michelin-star-text {
     grid-row: 1;
     grid-column: 3;
-    color: white;
-    font-size: 1.5rem;
+
     height: 2rem;
     margin-top: 15%;
+
+    color: #d9cab3;
+    font-size: 1.5rem;
 
     font-family: "Montserrat", sans-serif;
   }

@@ -1,16 +1,18 @@
 .landing {
   height: 88vh;
-  overflow: hidden;
   background: url("https://cdn.wallpapersafari.com/29/50/7acBKo.jpg");
   background-size: cover;
-  color: white;
+  overflow: hidden;
+
+  color: black;
 }
 
 .overlay {
   position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+
   height: 88vh;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .landing-title-text {
@@ -18,25 +20,35 @@
 
   font-size: 5rem;
   font-family: "Merriweather", serif;
+  -webkit-text-stroke: 1px #d9cab3;
 }
 
 .landing-sub-text {
   font-size: 2rem;
   font-family: "Montserrat", sans-serif;
+  -webkit-text-stroke: 1px #d9cab3;
 }
 
 .order-btn {
   font-size: 1.5rem;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
-  background: white;
-  border: none;
-  border-radius: 5px;
   color: black;
+
+  background: #d9cab3;
+
+  border-radius: 5px;
+
   margin-top: 3rem;
   padding: 10px;
+
   cursor: pointer;
 }
 
-.landing-link {
+.order-btn:hover {
+  background-color: black;
+
+  color: #d9cab3;
+
+  border: 1px solid #d9cab3;
 }

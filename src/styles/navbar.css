@@ -1,29 +1,34 @@
-/* Smaller screens (> 800)*/
 .nav {
   background-color: transparent;
 }
 
 .nav-container {
-  background-color: black;
-  color: white;
-  position: relative;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  position: relative;
+
+  background-color: black;
+  color: white;
   box-shadow: 0 0 5px 5px grey;
 }
 
 .nav-logo {
-  font-size: 4rem;
   grid-column: 1;
+
   margin-left: 20%;
   margin-top: 1rem;
+
+  font-size: 4rem;
+  color: #d9cab3;
 }
 
 .nav h4 {
   grid-column: 2;
+
   padding-left: 0;
   margin-top: 2rem;
 
+  color: #d9cab3;
   font-size: 1.5rem;
   font-family: "Merriweather", serif;
 }
@@ -33,13 +38,13 @@
 }
 
 .nav-hamburger {
-  color: white;
-  font-size: 3rem;
-  font-family: "Merriweather", serif;
-
   grid-column: 4;
   grid-row: 1;
   margin: 1.5rem 0 0 2rem;
+
+  color: white;
+  font-size: 3rem;
+  font-family: "Merriweather", serif;
 
   transition: all 0.3s linear;
 }
@@ -50,22 +55,25 @@
 }
 
 .nav-hamburger:hover {
-  color: #3282b8;
+  color: #d9cab3;
 }
 
 .hamburger-container {
-  height: 100%;
-  display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(4, 1fr);
+
+  height: 100%;
+  display: grid;
 }
 
 .hamburger-menu-item {
+  grid-row: 1fr;
+
   font-size: 1.5rem;
   font-family: "Merriweather", serif;
-  list-style: none;
-  grid-row: 1fr;
   color: white;
+
+  list-style: none;
 }
 
 .hamburger-menu-item a {
@@ -76,19 +84,21 @@
 .hamburger-menu-item a:hover {
   transition: all 0.1s linear;
   font-size: 1.5rem;
-  color: #3282b8;
+  color: #d9cab3;
 }
 
 .show-menu {
-  background-color: black;
   position: absolute;
+  z-index: 3;
+  background-color: black;
   overflow: hidden;
 
   height: 20rem;
   width: 15rem;
-  border-radius: 10px;
   margin-left: 55%;
   margin-top: 15%;
+
+  border-radius: 10px;
 
   transition: all 0.3s linear;
 }
@@ -99,9 +109,10 @@
 
   height: 0rem;
   width: 15rem;
-  border-radius: 10px;
   margin-left: 55%;
   margin-top: 15%;
+
+  border-radius: 10px;
 
   transition: all 0.3s linear;
 }
@@ -110,7 +121,6 @@
   display: none;
 }
 
-/* larger screens */
 @media screen and (min-width: 800px) {
   .nav-container {
     display: grid;
@@ -119,10 +129,13 @@
 
   .nav-item {
     display: grid;
-    list-style: none;
     grid-column: auto;
-    cursor: pointer;
+
     margin-top: 11.5%;
+
+    list-style: none;
+
+    cursor: pointer;
 
     font-family: "Merriweather", serif;
   }
@@ -159,6 +172,6 @@
   .nav-item a:hover {
     transition: all 0.1s linear;
     font-size: 1.5rem;
-    color: #3282b8;
+    color: #d9cab3;
   }
 }

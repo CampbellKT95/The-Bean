@@ -1,9 +1,10 @@
-/* small screen ( > 800px) */
 .menu {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 1fr);
-  background-image: url("https://images.unsplash.com/photo-1550895030-823330fc2551?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=387&q=80");
+
+  background-image: url("https://images.unsplash.com/photo-1508615039623-a25605d2b022?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80");
+  background-size: cover;
 }
 
 .menu-container {
@@ -35,12 +36,6 @@
 }
 
 @media screen and (min-width: 800px) {
-  /* .menu {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-  } */
-
   .menu-grid-setup {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -49,54 +44,72 @@
   .coffee-menu {
     grid-column: 1;
     grid-row: 1;
+
     max-width: 50%;
     height: 18rem;
     margin: 10px auto;
+
+    background-color: #d9cab3;
   }
 
   .coffee-menu-img {
     display: inline-block;
+
     grid-column: 2;
     grid-row: 1;
-    max-width: 51%;
+
+    max-width: 50%;
     height: 18rem;
     margin: auto;
+
     border: 5px solid black;
   }
 
   .breakfast-menu-img {
     display: inline-block;
+
     grid-column: 1;
     grid-row: 1;
-    max-width: 51%;
+
+    max-width: 50%;
     height: 18rem;
     margin: auto;
+
     border: 5px solid black;
   }
 
   .breakfast-menu {
     grid-column: 2;
     grid-row: 1;
+
     max-width: 50%;
     height: 18rem;
     margin: auto;
+
+    background-color: #d9cab3;
   }
 
   .baked-menu-img {
     display: inline-block;
+
     grid-column: 2;
     grid-row: 1;
+
     max-width: 55%;
     height: 18rem;
     margin: auto;
+
     border: 5px solid black;
   }
 
   .baked-menu {
     grid-column: 1;
     grid-row: 1;
+
     max-width: 50%;
     height: 18rem;
     margin: auto;
+
+    background-color: #d9cab3;
   }
 }
