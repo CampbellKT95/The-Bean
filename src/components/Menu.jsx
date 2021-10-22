@@ -26,14 +26,16 @@ const Menu = () => {
             </div>
             <div className="menu-grid-setup">
                 <img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80" alt="breakfast-img" className="breakfast-menu-img"  data-aos="fade-left"/>
-                <article data-aos="fade-right" className="menu-container breakfast-menu">
-                    <h2 className="menu-title">Breakfast</h2>
 
-                    {menuData[1].map((item) => {
-                        return <p className="menu-item">{item.name}</p>
-                    })}
 
-                </article>
+                    <article data-aos="fade-right" className="menu-container breakfast-menu">
+                        <h2 className="menu-title">Breakfast</h2>
+
+                        {menuData[1].map((item) => {
+                            return <p className="menu-item">{item.name}</p>
+                        })}
+
+                    </article>
 
             </div>
             <div className="menu-grid-setup">

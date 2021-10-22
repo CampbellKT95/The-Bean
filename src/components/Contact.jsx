@@ -1,4 +1,5 @@
 import {Link} from "react-router-dom";
+import {motion} from "framer-motion"
 import "../styles/contact.css"
 
 const Contact = () => {
@@ -13,7 +14,12 @@ const Contact = () => {
                 <h4>Mon-Sun</h4>
                 <p>6am - 9pm</p>
             </div>
-            <Link to="/order" className="footer-order-link"><button className="footer-order-btn">Order Pickup</button></Link>
+            
+            <motion.div whileHover={{
+                        scale: 1.1
+                    }} className="footer-order-link">
+                <Link to="/order"><button className="footer-order-btn">Order Pickup</button></Link>
+            </motion.div>
 
         </footer>
     </>

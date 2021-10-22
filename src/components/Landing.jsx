@@ -14,7 +14,7 @@ const Landing = ({clearDropdown}) => {
 
 
                     <motion.div 
-                    whileTap={{
+                    whileHover={{
                         scale: 1.1
                     }}>
                         <Link to="/order" classname="landing-link"><button className="order-btn">Order Pickup</button></Link>
