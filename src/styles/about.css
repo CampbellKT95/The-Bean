@@ -10,13 +10,14 @@
 }
 
 .about-text-container h4 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-family: "Merriweather", serif;
 }
 
 .about-text-container p {
   font-size: 1.25rem;
   font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
 }
 
 .about-text {
@@ -71,7 +72,7 @@
   }
 
   .about-text-container h4 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-family: "Merriweather", serif;
   }
 
@@ -103,23 +104,21 @@
   }
 
   .about-img-1 {
-    grid-row: 1;
+    grid-row: 1 / 3;
     grid-column: 1;
+    margin-top: -15%;
 
     max-width: 100%;
   }
 
   .about-img-2 {
-    grid-row: 2;
+    grid-row: 3;
     grid-column: 1;
 
     max-width: 100%;
   }
 
   .about-img-3 {
-    grid-row: 3;
-    grid-column: 1;
-
-    max-width: 100%;
+    display: none;
   }
 }

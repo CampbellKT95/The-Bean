@@ -1,2 +1,8 @@
-concurrently script to run both front/back end:
-        "start": "concurrently \"react-scripts start\" \"cd server && node index.js\"" ,
+
+Make menu styling more appealing
+
+Add framer motion to buttons onClick
+
+
+Heroku site currently deployed is unable to process stripe payment
+        Cannot post url/payment. Unsure of why.

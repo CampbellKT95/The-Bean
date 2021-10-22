@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import {CardElement, useElements, useStripe} from "@stripe/react-stripe-js";
+import {Link} from "react-router-dom";
 import axios from "axios";
 import "../styles/confirmation.css";
 
@@ -40,10 +41,9 @@ const Confirmation = ({orderList, bill}) => {
             try {
                 const {id} = paymentMethod;
 
-                const response = await axios.post("https://the-bean-cafe.herokuapp.com/payment", {
+                const response = await axios.post("http://localhost:4000/payment", {
 
-
-                // "http://localhost:4000/payment"
+                // "https://the-bean-cafe.herokuapp.com/payment"
 
                     // payment in cents
                     amount: bill * 100,
@@ -64,30 +64,35 @@ const Confirmation = ({orderList, bill}) => {
         }
             }
 
-    return <section className="confirmation">
-        <h2 className="confirmation-title">Order Confirmation</h2>
-        <h4 className="confirmation-bill">${bill}</h4>
-        {orderList.map((item) => {
-            return <p className="confirmation-item">{item}</p>
-        })}
+    return <>
+        <Link to="/order" className="back-link"><h1 className="back-title">Back</h1></Link>
 
-        {/* stripe */}
-        {!success ? 
-         <form onSubmit={handleSubmit}>
-            <fieldset className="FormGroup">
-                <div className="FormRow">
-                    <CardElement options={CARD_OPTIONS} />
-                </div>
-            </fieldset>
-            <button className="stripe-btn">Pay</button>
-        </form>
-        :
-        <div>
-            <h2>Payment complete!</h2>
-        </div>
-        }
+        <section className="confirmation">
+            <h2 className="confirmation-title">Order Confirmation</h2>
+            <h4 className="confirmation-bill">${bill}</h4>
+            {orderList.map((item) => {
+                return <p className="confirmation-item">{item}</p>
+            })}
 
-    </section>
+            {/* stripe */}
+            {!success ? 
+            <form onSubmit={handleSubmit}>
+                <fieldset className="FormGroup">
+                    <div className="FormRow">
+                        <CardElement options={CARD_OPTIONS} />
+                    </div>
+                </fieldset>
+                <button className="stripe-btn">Pay</button>
+            </form>
+            :
+            <div>
+                <h2>Payment complete!</h2>
+            </div>
+            }
+
+        </section>
+
+    </>
 }
 
 export default Confirmation;

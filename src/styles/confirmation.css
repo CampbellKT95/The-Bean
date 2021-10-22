@@ -5,10 +5,10 @@ body {
 
 .confirmation {
   margin: auto;
-  margin-top: 5rem;
+  margin-top: 0;
   width: 90%;
 
-  border: 5px solid black;
+  border: 5px solid white;
   border-radius: 5px;
 
   background-color: black;
@@ -86,6 +86,16 @@ body {
   box-shadow: 0 6px 9px rgba(50, 50, 93, 0.06), 0 2px 5px rgba(0, 0, 0, 0.08),
     inset 0 1px 0 #e298d8;
   transform: scale(0.99);
+}
+
+.back-link {
+  font-size: 1rem;
+  margin: auto;
+  padding: 0;
+}
+
+.back-title {
+  font-family: "Merriweather", serif;
 }
 
 @media screen and (min-width: 800px) {

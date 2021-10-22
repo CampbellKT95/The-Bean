@@ -44,6 +44,7 @@
 
   border: 1px solid black;
   border-radius: 5px;
+  background-color: white;
 }
 
 .coffee-order {
@@ -56,6 +57,7 @@
 
   border: 1px solid black;
   border-radius: 5px;
+  background-color: white;
 }
 
 .breakfast-order {
@@ -68,6 +70,7 @@
 
   border: 1px solid black;
   border-radius: 5px;
+  background-color: white;
 }
 
 .baked-goods-order {

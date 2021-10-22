@@ -1,8 +1,7 @@
 .reviews-container {
   background-color: black;
 
-  padding: 20px 0;
-  height: 50rem;
+  padding: 55px 0;
 }
 
 .yelp {
@@ -127,7 +126,7 @@
 
     margin-top: 5rem;
 
-    font-size: 5rem;
+    font-size: 7rem;
     color: #ff1a1a;
   }
 
@@ -153,7 +152,7 @@
     margin-top: 5rem;
     justify-content: center;
 
-    font-size: 5rem;
+    font-size: 7rem;
 
     color: #bd2333;
   }
@@ -169,5 +168,13 @@
     font-size: 1.5rem;
 
     font-family: "Montserrat", sans-serif;
+  }
+
+  .next-btn {
+    font-size: 2rem;
+  }
+
+  .prev-btn {
+    font-size: 2rem;
   }
 }
