@@ -40,9 +40,10 @@ const Confirmation = ({orderList, bill}) => {
             try {
                 const {id} = paymentMethod;
 
-                const response = await axios.post("http://localhost:4000/payment", {
+                const response = await axios.post("https://the-bean-cafe.herokuapp.com/payment", {
 
-                // "https://the-bean-cafe.herokuapp.com/payment"
+
+                // "http://localhost:4000/payment"
 
                     // payment in cents
                     amount: bill * 100,
