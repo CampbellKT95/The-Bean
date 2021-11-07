@@ -16,7 +16,7 @@ This project is a full website for an imaginary cafe using React.js. The reason 
 
 _Live version_:
 
-https://the-bean-cafe.herokuapp.com/
+https://competent-heisenberg-1f9374.netlify.app/order
 
 # From the repo
 

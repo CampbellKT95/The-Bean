@@ -4,6 +4,8 @@ import {Link} from "react-router-dom";
 import axios from "axios";
 import "../styles/confirmation.css";
 
+const API = axios.create({baseURL: "https://bean-cafe.herokuapp.com/"})
+
 const CARD_OPTIONS = {
     iconStyle: "solid",
     style: {
@@ -41,11 +43,8 @@ const Confirmation = ({orderList, bill}) => {
             try {
                 const {id} = paymentMethod;
 
-                const response = await axios.post("http://localhost:4000/payment", {
+                const response = await API.post("/payment", {
 
-                // "https://the-bean-cafe.herokuapp.com/payment"
-
-                    // payment in cents
                     amount: bill * 100,
                     id: id
                 })
