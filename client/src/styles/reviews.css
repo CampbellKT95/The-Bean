@@ -1,0 +1,180 @@
+.reviews-container {
+  background-color: black;
+
+  padding: 55px 0;
+}
+
+.yelp {
+  grid-row: 1;
+  grid-column: 1;
+
+  margin: auto;
+
+  font-size: 5rem;
+  color: #ff1a1a;
+}
+
+.yelp-text {
+  grid-row: 1;
+  grid-column: 1;
+
+  height: 2rem;
+  padding-bottom: 20px;
+  margin-top: 0;
+
+  color: #d9cab3;
+  font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.michelin-star {
+  grid-row: 1;
+  grid-column: 1;
+
+  margin: auto;
+
+  font-size: 5rem;
+  color: #bd2333;
+}
+
+.michelin-star-text {
+  grid-row: 1;
+  grid-column: 1;
+
+  height: 2rem;
+  padding-bottom: 20px;
+  margin-top: 0;
+
+  color: #d9cab3;
+  font-size: 1.5rem;
+
+  font-family: "Montserrat", sans-serif;
+}
+
+.show {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.reviews-img {
+  max-height: 15rem;
+
+  border-radius: 100%;
+  border: 5px solid #d9cab3;
+}
+
+.reviews-name {
+  font-family: "Merriweather", serif;
+  font-size: 1.5rem;
+  color: #d9cab3;
+}
+
+.reviews-quote {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.25rem;
+  color: white;
+}
+
+.next-btn {
+  padding-bottom: 30px;
+
+  background: transparent;
+  border: none;
+
+  font-size: 1.5rem;
+  color: #d9cab3;
+
+  cursor: pointer;
+}
+
+.prev-btn {
+  background: transparent;
+  border: none;
+
+  font-size: 1.5rem;
+  color: #d9cab3;
+
+  cursor: pointer;
+}
+
+@media screen and (min-width: 800px) {
+  .reviews-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+
+    height: 26rem;
+
+    background-color: black;
+
+    text-align: center;
+  }
+
+  .show {
+    grid-row: 1;
+    grid-column: 2;
+  }
+
+  .yelp {
+    grid-row: 1;
+    grid-column: 1;
+
+    display: inline-block;
+
+    margin-top: 5rem;
+
+    font-size: 7rem;
+    color: #ff1a1a;
+  }
+
+  .yelp-text {
+    grid-row: 1;
+    grid-column: 1;
+
+    height: 2rem;
+    margin-top: 15%;
+
+    color: #d9cab3;
+    font-size: 1.5rem;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .michelin-star {
+    grid-row: 1;
+    grid-column: 3;
+
+    display: inline-block;
+
+    margin: auto;
+    margin-top: 5rem;
+    justify-content: center;
+
+    font-size: 7rem;
+
+    color: #bd2333;
+  }
+
+  .michelin-star-text {
+    grid-row: 1;
+    grid-column: 3;
+
+    height: 2rem;
+    margin-top: 15%;
+
+    color: #d9cab3;
+    font-size: 1.5rem;
+
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .next-btn {
+    font-size: 2rem;
+  }
+
+  .prev-btn {
+    font-size: 2rem;
+  }
+}
