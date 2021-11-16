@@ -5,7 +5,7 @@
 
   background-color: black;
 
-  box-shadow: 0 0 5px 5px grey;
+  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.5);
 }
 
 .order-title {
@@ -154,7 +154,7 @@
 
   .order-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-gap: 15px;
 
@@ -163,6 +163,7 @@
 
   .order-container h2 {
     font-family: "Merriweather", serif;
+    font-size: 1.75rem;
   }
 
   .order-container h4 {
@@ -171,6 +172,7 @@
 
   .order-container p {
     font-family: "Montserrat", sans-serif;
+    font-size: 1.25rem;
   }
 
   .coffee-order-container {
@@ -181,10 +183,10 @@
     height: auto;
     margin: 0 auto;
 
-    border: 5px solid black;
+    border: none;
     border-radius: 5px;
 
-    box-shadow: 3px 3px 5px 2px black;
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.5);
   }
 
   .breakfast-order-container {
@@ -195,24 +197,24 @@
     height: auto;
     margin: 0 auto;
 
-    border: 5px solid black;
+    border: none;
     border-radius: 5px;
 
-    box-shadow: 3px 3px 5px 2px black;
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.5);
   }
 
   .baked-goods-order-container {
-    grid-column: 1;
-    grid-row: 2;
+    grid-column: 3;
+    grid-row: 1;
 
     width: 90%;
     height: auto;
     margin: 0 auto;
 
-    border: 5px solid black;
+    border: none;
     border-radius: 5px;
 
-    box-shadow: 3px 3px 5px 2px black;
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.5);
   }
 
   .current-order {
@@ -227,8 +229,7 @@
     color: #d9cab3;
     border-radius: 5px;
 
-    border: black 5px solid;
-    box-shadow: 3px 3px 5px 2px #d9cab3;
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.5);
   }
 
   .current-order-title {

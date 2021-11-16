@@ -174,7 +174,16 @@
     font-size: 2rem;
   }
 
+  .next-btn:hover {
+    transform: scale(1.1);
+  }
+
   .prev-btn {
     font-size: 2rem;
+    padding-left: 30px;
+  }
+
+  .prev-btn:hover {
+    transform: scale(1.1);
   }
 }

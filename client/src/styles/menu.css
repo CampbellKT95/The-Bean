@@ -5,17 +5,19 @@
 
   background-image: url("https://images.unsplash.com/photo-1508615039623-a25605d2b022?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80");
   background-size: cover;
+  padding: 1rem 0;
 }
 
 .menu-container {
   margin: 15px auto;
-  border: 5px solid black;
+
   width: 80%;
+  height: 17rem;
 
   background-color: white;
 
   border-radius: 10px;
-  box-shadow: 5px 2px 5px 5px grey;
+  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.5);
 }
 
 .menu-item {
@@ -27,6 +29,30 @@
   font-family: "Merriweather", serif;
   font-size: 2.5rem;
   color: #d9cab3;
+}
+
+.coffee-menu h2 {
+  border-bottom: 1px solid black;
+  width: 50%;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+  margin: auto auto auto auto;
+}
+
+.breakfast-menu h2 {
+  border-bottom: 1px solid black;
+  width: 60%;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+  margin: auto auto auto auto;
+}
+
+.baked-menu h2 {
+  border-bottom: 1px solid black;
+  width: 80%;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+  margin: auto auto auto auto;
 }
 
 .coffee-menu-img {
@@ -56,6 +82,12 @@
     margin: 10px auto;
   }
 
+  .coffee-menu h2 {
+    border-bottom: 1px solid black;
+    width: 40%;
+    margin: 1rem auto 1.5rem auto;
+  }
+
   .coffee-menu-img {
     display: inline-block;
 
@@ -66,9 +98,14 @@
     height: 18rem;
     margin: auto;
 
-    border: 5px solid black;
     border-radius: 10px;
-    box-shadow: 5px 2px 5px 5px grey;
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.5);
+  }
+
+  .breakfast-menu h2 {
+    border-bottom: 1px solid black;
+    width: 50%;
+    margin: 1rem auto 1.5rem auto;
   }
 
   .breakfast-menu-img {
@@ -81,9 +118,8 @@
     height: 18rem;
     margin: auto;
 
-    border: 5px solid black;
     border-radius: 10px;
-    box-shadow: 5px 2px 5px 5px grey;
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.5);
   }
 
   .breakfast-menu {
@@ -93,6 +129,12 @@
     max-width: 50%;
     height: 18rem;
     margin: auto;
+  }
+
+  .baked-menu h2 {
+    border-bottom: 1px solid black;
+    width: 70%;
+    margin: 1rem auto 1.5rem auto;
   }
 
   .baked-menu-img {
@@ -105,9 +147,8 @@
     height: 18rem;
     margin: auto;
 
-    border: 5px solid black;
     border-radius: 10px;
-    box-shadow: 5px 2px 5px 5px grey;
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.5);
   }
 
   .baked-menu {

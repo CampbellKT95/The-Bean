@@ -1,12 +1,9 @@
-import React, {useEffect} from "react";
+import React, {useState, useEffect} from "react";
 import { menuData } from "../data/menuData";
 import "../styles/order.css";
 import {Link} from "react-router-dom";
-import {motion} from "framer-motion";
-
 
 const Order = ({orderList, setOrderList, bill, setBill}) => {
-
 
     const handleClick = (e) => {
         let clickedItem = e.currentTarget.id
@@ -40,11 +37,14 @@ const Order = ({orderList, setOrderList, bill, setBill}) => {
         setBill(0);
     }
 
+    const [modal, setModal] = useState(false);
+
+
+
     return <>
         <nav className="order-nav">
             <h1 className="order-title">Order Online</h1>
         </nav>
-
 
         <section className="order-container">
             <div className="coffee-order-container">
@@ -69,11 +69,9 @@ const Order = ({orderList, setOrderList, bill, setBill}) => {
                     return <p className="baked-goods-order" id={item.id} key={item.id} onClick={handleClick}>{item.name} (${item.price})</p>
                 })}
             </div>
-            <motion.div className="back-link-position" whileHover={{
-                        scale: 1.2
-                    }}>
+            <div className="back-link-position">
                 <Link to="/" className="back-link"><h1 className="back-title">Back</h1></Link>
-            </motion.div>
+            </div>
             <div className="current-order">
                 <h4 className="current-order-title">Your Cart: ${bill}</h4>
                 <div className="current-order-container">
@@ -84,6 +82,7 @@ const Order = ({orderList, setOrderList, bill, setBill}) => {
                 {orderList.map((item) => {
                     return <p className="current-order-item">{item}</p>
                 })}
+
             </div>
         </section>
     </>
