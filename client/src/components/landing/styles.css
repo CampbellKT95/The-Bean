@@ -1,9 +1,14 @@
+.landing-section {
+  position: relative;
+  height: 88vh;
+  overflow: hidden;
+}
+
 .landing {
   height: 88vh;
   background: url("https://cdn.wallpapersafari.com/29/50/7acBKo.jpg");
   background-size: cover;
-  overflow: hidden;
-
+  background-attachment: fixed;
   color: black;
 }
 

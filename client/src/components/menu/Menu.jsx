@@ -1,7 +1,7 @@
+import "./styles.css";
 import React, { useEffect } from "react";
-import {menuData} from "../data/menuData";
+import {menuData} from "../../data/menuData";
 import "aos/dist/aos.css";
-import "../styles/menu.css"
 import Aos from "aos";
 
 const Menu = () => {

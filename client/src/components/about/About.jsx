@@ -1,5 +1,5 @@
 import Aos from "aos";
-import "../styles/about.css"
+import "./styles.css"
 
 const About = () => {
 

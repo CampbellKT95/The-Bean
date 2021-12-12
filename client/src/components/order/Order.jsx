@@ -1,6 +1,6 @@
+import "./styles.css";
 import React, {useState, useEffect} from "react";
-import { menuData } from "../data/menuData";
-import "../styles/order.css";
+import { menuData } from "../../data/menuData";
 import {Link} from "react-router-dom";
 
 const Order = ({orderList, setOrderList, bill, setBill}) => {

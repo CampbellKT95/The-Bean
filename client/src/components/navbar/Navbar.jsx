@@ -1,9 +1,9 @@
-import "../styles/navbar.css";
+import "./styles.css";
 import React, {useState} from "react";
-import Landing from "./Landing";
+import Landing from "../landing/Landing";
+import List from "../list/List";
 import { FaCoffee, FaBars } from "react-icons/fa";
-import {navbarData} from "../data/navbarData";
-import List from "./List";
+import {navbarData} from "../../data/navbarData";
 
 const Navbar = () => {
 

@@ -1,8 +1,9 @@
+import "./styles.css";
+
 import React, {useState} from "react";
 import {CardElement, useElements, useStripe} from "@stripe/react-stripe-js";
 import {Link} from "react-router-dom";
 import axios from "axios";
-import "../styles/confirmation.css";
 
 const API = axios.create({baseURL: "https://bean-cafe.herokuapp.com/"})
 

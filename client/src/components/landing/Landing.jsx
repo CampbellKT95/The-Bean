@@ -1,12 +1,12 @@
+import "./styles.css";
 import React from "react";
 import {Link} from "react-router-dom";
 import {motion} from "framer-motion";
-import "../styles/landing.css";
 
 const Landing = ({clearDropdown}) => {
 
     return (
-        <div onClick={clearDropdown}>
+        <div onClick={clearDropdown} className="landing-section">
             <main className="landing">
                 <section className="overlay">
                     <h2 className="landing-title-text">The Bean</h2>

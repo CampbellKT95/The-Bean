@@ -1,13 +1,14 @@
+import "./app.css";
+
 import React, {useState} from "react";
-import Navbar from "./components/Navbar";
-import Menu from "./components/Menu";
-import Reviews from "./components/Reviews";
-import About from "./components/About";
-import Contact from "./components/Contact";
-import Order from "./components/Order";
+import Navbar from "./components/navbar/Navbar";
+import Menu from "./components/menu/Menu";
+import Reviews from "./components/reviews/Reviews";
+import About from "./components/about/About";
+import Contact from "./components/contact/Contact";
+import Order from "./components/order/Order";
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 
-import "./styles/app.css";
 import StripeContainer from "./components/StripeContainer";
 
 

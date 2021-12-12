@@ -1,8 +1,8 @@
+import "./styles.css";
 import React, {useState, useEffect} from "react";
-import {reviewsData} from "../data/reviewsData";
+import {reviewsData} from "../../data/reviewsData";
 import { FaAngleDoubleLeft, FaAngleDoubleRight, FaYelp, FaStar } from "react-icons/fa";
 import Aos from "aos";
-import "../styles/reviews.css";
 
 const Reviews = () => {
 
