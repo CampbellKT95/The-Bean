@@ -3,7 +3,7 @@
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 0.75fr, 1fr, 0.75fr;
 
-  background-color: black;
+  background-color: rgb(32, 32, 32);
   margin: auto;
 
   color: white;

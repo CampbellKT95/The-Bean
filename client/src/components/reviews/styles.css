@@ -1,5 +1,5 @@
 .reviews-container {
-  background-color: black;
+  background-color: rgb(32, 32, 32);
 
   padding: 55px 0;
 }
@@ -60,7 +60,8 @@
 }
 
 .reviews-img {
-  max-height: 15rem;
+  height: 15rem;
+  width: 15rem;
 
   border-radius: 100%;
   border: 5px solid #d9cab3;
@@ -107,9 +108,6 @@
     grid-template-rows: 1fr;
 
     height: 26rem;
-
-    background-color: black;
-
     text-align: center;
   }
 
