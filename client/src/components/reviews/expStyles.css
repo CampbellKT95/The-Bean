@@ -1,0 +1,151 @@
+.reviews-container {
+  background-color: rgb(32, 32, 32);
+
+  padding: 55px 0;
+}
+
+.yelp {
+  grid-row: 1;
+  grid-column: 1;
+
+  margin: auto;
+
+  font-size: 5rem;
+  color: #ff1a1a;
+}
+
+.yelp-text {
+  grid-row: 1;
+  grid-column: 1;
+
+  height: 2rem;
+  padding-bottom: 20px;
+  margin-top: 0;
+
+  color: #d9cab3;
+  font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.michelin-star {
+  grid-row: 1;
+  grid-column: 1;
+
+  margin: auto;
+
+  font-size: 5rem;
+  color: #bd2333;
+}
+
+.michelin-star-text {
+  grid-row: 1;
+  grid-column: 1;
+
+  height: 2rem;
+  padding-bottom: 20px;
+  margin-top: 0;
+
+  color: #d9cab3;
+  font-size: 1.5rem;
+
+  font-family: "Montserrat", sans-serif;
+}
+
+.show {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.reviews-img {
+  height: 15rem;
+  width: 15rem;
+
+  border-radius: 100%;
+  border: 5px solid #d9cab3;
+}
+
+.reviews-name {
+  font-family: "Merriweather", serif;
+  font-size: 1.5rem;
+  color: #d9cab3;
+}
+
+.reviews-quote {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.25rem;
+  color: white;
+}
+
+.next-btn {
+  padding-bottom: 30px;
+
+  background: transparent;
+  border: none;
+
+  font-size: 1.5rem;
+  color: #d9cab3;
+
+  cursor: pointer;
+}
+
+.prev-btn {
+  background: transparent;
+  border: none;
+
+  font-size: 1.5rem;
+  color: #d9cab3;
+
+  cursor: pointer;
+}
+
+@media screen and (min-width: 800px) {
+  .reviews-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+
+    height: 26rem;
+    text-align: center;
+  }
+
+  .show {
+    transition: linear all 0.2s;
+    grid-row: 1;
+    grid-column: 2;
+    position: relative;
+  }
+
+  .previous-review {
+    transition: linear all 0.2s;
+    opacity: 0.2;
+    grid-row: 1;
+    grid-column: 1;
+  }
+
+  .next-review {
+    transition: linear all 0.2s;
+    opacity: 0.2;
+    grid-row: 1;
+    grid-column: 3;
+  }
+
+  .next-btn {
+    font-size: 2rem;
+  }
+
+  .next-btn:hover {
+    transform: scale(1.1);
+  }
+
+  .prev-btn {
+    font-size: 2rem;
+    padding-left: 30px;
+  }
+
+  .prev-btn:hover {
+    transform: scale(1.1);
+  }
+}

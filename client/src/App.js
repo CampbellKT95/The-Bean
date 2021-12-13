@@ -3,7 +3,7 @@ import "./app.css";
 import React, {useState} from "react";
 import Navbar from "./components/navbar/Navbar";
 import Menu from "./components/menu/Menu";
-import Reviews from "./components/reviews/Reviews";
+import Reviews from "./components/reviews/expReviews";
 import About from "./components/about/About";
 import Contact from "./components/contact/Contact";
 import Order from "./components/order/Order";
