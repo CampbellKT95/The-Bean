@@ -1,179 +1,67 @@
-.menu {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, 1fr);
-
+.menu-exp-container {
   background-image: url("https://images.unsplash.com/photo-1508615039623-a25605d2b022?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80");
-  background-size: cover;
-  padding: 1rem 0;
 }
 
-.menu-container {
-  margin: 15px auto;
+.exp-menu {
+  display: flex;
+  flex-direction: column;
+}
 
-  width: 80%;
-  height: 17rem;
-
+.food-container {
+  transition: all linear 0.2s;
   background-color: white;
-
-  border-radius: 10px;
-  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.5);
+  border: 1px solid black;
+  width: 95%;
+  margin: 2% 2%;
+  box-shadow: -1rem 2px 3rem black;
+  padding-bottom: 1.5rem;
 }
 
-.menu-item {
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.25rem;
-}
-
-.menu-title {
-  font-family: "Merriweather", serif;
-  font-size: 2.5rem;
+.exp-menu-title {
+  font-size: 3rem;
+  border-bottom: 1px solid black;
+  width: 70%;
+  margin: 1.5rem auto 1.5rem auto;
+  padding-bottom: 1rem;
   color: #d9cab3;
 }
 
-.coffee-menu h2 {
-  border-bottom: 1px solid black;
-  width: 50%;
-  padding-top: 1rem;
-  padding-bottom: 0.5rem;
-  margin: auto auto auto auto;
+.exp-desc-price {
+  display: grid;
+  grid-template-columns: 1fr 0.25fr;
+  font-size: 1.15rem;
+  justify-content: start;
 }
 
-.breakfast-menu h2 {
-  border-bottom: 1px solid black;
-  width: 60%;
-  padding-top: 1rem;
-  padding-bottom: 0.5rem;
-  margin: auto auto auto auto;
+.exp-menu-item {
+  font-size: 1.5rem;
+  text-align: start;
+  margin-left: 1.5rem;
 }
 
-.baked-menu h2 {
-  border-bottom: 1px solid black;
-  width: 80%;
-  padding-top: 1rem;
-  padding-bottom: 0.5rem;
-  margin: auto auto auto auto;
+.exp-item-description {
+  justify-content: start;
+  display: inline-block;
 }
 
-.coffee-menu-img {
-  display: none;
+.exp-price {
 }
 
-.breakfast-menu-img {
-  display: none;
-}
-
-.baked-menu-img {
-  display: none;
+.exp-img {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 100%;
 }
 
 @media screen and (min-width: 800px) {
-  .menu-grid-setup {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .coffee-menu {
-    grid-column: 1;
-    grid-row: 1;
-
-    max-width: 50%;
-    height: 18rem;
-    margin: 10px auto;
-  }
-
-  .coffee-menu h2 {
-    border-bottom: 1px solid black;
-    width: 40%;
-    margin: 1rem auto 1.5rem auto;
-  }
-
-  .coffee-menu-img {
-    display: inline-block;
-
-    grid-column: 2;
-    grid-row: 1;
-
-    max-width: 50%;
-    height: 18rem;
-    margin: auto;
-
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.5);
-  }
-
-  .breakfast-menu h2 {
-    border-bottom: 1px solid black;
-    width: 50%;
-    margin: 1rem auto 1.5rem auto;
-  }
-
-  .breakfast-menu-img {
-    display: inline-block;
-
-    grid-column: 1;
-    grid-row: 1;
-
-    max-width: 50%;
-    height: 18rem;
-    margin: auto;
-
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.5);
-  }
-
-  .breakfast-menu {
-    grid-column: 2;
-    grid-row: 1;
-
-    max-width: 50%;
-    height: 18rem;
-    margin: auto;
-  }
-
-  .baked-menu h2 {
-    border-bottom: 1px solid black;
-    width: 70%;
-    margin: 1rem auto 1.5rem auto;
-  }
-
-  .baked-menu-img {
-    display: inline-block;
-
-    grid-column: 2;
-    grid-row: 1;
-
-    max-width: 55%;
-    height: 18rem;
-    margin: auto;
-
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.5);
-  }
-
-  .baked-menu {
-    grid-column: 1;
-    grid-row: 1;
-
-    max-width: 50%;
-    height: 18rem;
-    margin: auto;
-  }
-
-  /* ********************************* */
-
   .menu-exp-container {
-    /* display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    text-align: start; */
     background-image: url("https://images.unsplash.com/photo-1508615039623-a25605d2b022?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80");
   }
 
   .exp-menu {
     display: flex;
     flex-direction: row;
-    justify-content: start;
-    padding-bottom: 4rem;
   }
 
   .food-container {
@@ -183,6 +71,7 @@
     width: 30%;
     margin: 2% 2%;
     box-shadow: -1rem 2px 3rem black;
+    padding-bottom: 1.5rem;
   }
 
   .food-container:hover {
@@ -192,13 +81,13 @@
 
   .food-container:hover ~ .food-container {
     transition: all linear 0.2s;
-    transform: translateX(3rem);
   }
 
   .exp-menu-title {
-    font-size: 4rem;
+    font-size: 3rem;
     border-bottom: 1px solid black;
-    width: 60%;
+    width: 70%;
+    margin: 1.5rem auto 1.5rem auto;
     padding-bottom: 1rem;
     color: #d9cab3;
   }
@@ -207,22 +96,20 @@
     display: grid;
     grid-template-columns: 1fr 0.25fr;
     font-size: 1.15rem;
+    justify-content: start;
   }
 
   .exp-menu-item {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
+    text-align: start;
+    margin-left: 1.5rem;
   }
 
   .exp-item-description {
+    justify-content: start;
+    display: inline-block;
   }
 
   .exp-price {
-  }
-
-  .exp-img {
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    width: 100%;
   }
 }
