@@ -1,4 +1,5 @@
 .order-nav {
+  display: flex;
   height: 4rem;
   margin-top: 0;
   margin-bottom: 15px;
@@ -8,8 +9,25 @@
   box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.5);
 }
 
+.back-link {
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  text-decoration: none;
+}
+
+.back-link-position {
+  display: inline-block;
+  position: absolute;
+  margin-left: 0.5rem;
+
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+}
+
 .order-title {
-  margin-top: 0;
+  margin: auto;
   padding-top: 10px;
 
   font-family: "Merriweather", serif;
@@ -28,6 +46,7 @@
 
 .order-container h2 {
   font-family: "Merriweather", serif;
+  color: #d9cab3;
 }
 
 .order-container h4 {
@@ -36,6 +55,24 @@
 
 .order-container p {
   font-family: "Montserrat", sans-serif;
+  padding: 0.5rem 0;
+  font-size: 1.15rem;
+}
+
+.order-container p:hover {
+  transform: scale(1.05);
+}
+
+.order-container p:active {
+  transform: scale(0.95);
+}
+
+.order-section-title {
+  font-size: 2rem !important;
+  border-bottom: 1px solid black;
+  width: 60%;
+  margin: auto;
+  padding: 1rem 0;
 }
 
 .coffee-order-container {
@@ -114,26 +151,6 @@
   cursor: pointer;
 }
 
-.back-link {
-  font-size: 1rem;
-  font-family: "Montserrat", sans-serif;
-  color: black;
-  text-decoration: none;
-}
-
-.back-link-position {
-  grid-column: 1;
-
-  display: inline-block;
-
-  margin-right: 80%;
-
-  font-size: 1rem;
-  font-family: "Montserrat", sans-serif;
-  color: black;
-  text-decoration: none;
-}
-
 .purchase-btn {
   grid-column: 3;
   margin-left: 10%;
@@ -173,6 +190,10 @@
   .order-container p {
     font-family: "Montserrat", sans-serif;
     font-size: 1.25rem;
+  }
+
+  .order-section-title {
+    font-size: 2.5rem !important;
   }
 
   .coffee-order-container {
@@ -276,6 +297,11 @@
 
   .current-order-item {
     font-size: 1rem;
+    cursor: pointer;
+  }
+
+  .current-order-item:active {
+    transform: scale(0.95);
   }
 
   .order-nav-bottom {

@@ -61,8 +61,8 @@ const Reviews = () => {
                 <img src={reviewsData[currentReview].image} alt={reviewsData[currentReview].name} className="reviews-img" />
                 <h4 className="reviews-name">{reviewsData[currentReview].name}</h4>
                 <p className="reviews-quote">{reviewsData[currentReview].quote}</p>
-                <button className="next-btn" onClick={prevReview}><FaAngleDoubleLeft /></button>
-                <button className="prev-btn" onClick={nextReview}><FaAngleDoubleRight /></button>
+                <button className="next-btn" onClick={nextReview}><FaAngleDoubleLeft /></button>
+                <button className="prev-btn" onClick={prevReview}><FaAngleDoubleRight /></button>
             </div>
 
             <div className="next-review">

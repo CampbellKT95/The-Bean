@@ -4,53 +4,6 @@
   padding: 55px 0;
 }
 
-.yelp {
-  grid-row: 1;
-  grid-column: 1;
-
-  margin: auto;
-
-  font-size: 5rem;
-  color: #ff1a1a;
-}
-
-.yelp-text {
-  grid-row: 1;
-  grid-column: 1;
-
-  height: 2rem;
-  padding-bottom: 20px;
-  margin-top: 0;
-
-  color: #d9cab3;
-  font-size: 1.5rem;
-  font-family: "Montserrat", sans-serif;
-}
-
-.michelin-star {
-  grid-row: 1;
-  grid-column: 1;
-
-  margin: auto;
-
-  font-size: 5rem;
-  color: #bd2333;
-}
-
-.michelin-star-text {
-  grid-row: 1;
-  grid-column: 1;
-
-  height: 2rem;
-  padding-bottom: 20px;
-  margin-top: 0;
-
-  color: #d9cab3;
-  font-size: 1.5rem;
-
-  font-family: "Montserrat", sans-serif;
-}
-
 .show {
   display: block;
 }
@@ -77,6 +30,14 @@
   font-family: "Montserrat", sans-serif;
   font-size: 1.25rem;
   color: white;
+}
+
+.previous-review {
+  display: none;
+}
+
+.next-review {
+  display: none;
 }
 
 .next-btn {
@@ -119,6 +80,7 @@
   }
 
   .previous-review {
+    display: inline-block;
     transition: linear all 0.2s;
     opacity: 0.2;
     grid-row: 1;
@@ -126,6 +88,7 @@
   }
 
   .next-review {
+    display: inline-block;
     transition: linear all 0.2s;
     opacity: 0.2;
     grid-row: 1;
