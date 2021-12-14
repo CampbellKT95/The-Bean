@@ -43,24 +43,38 @@ const Order = ({orderList, setOrderList, bill, setBill}) => {
     }
 
     useEffect(() => {
-        console.log(orderList, orderQuantity)
-    }, [orderQuantity]);
+        console.log(orderList)
+    }, [orderList, orderQuantity]);
 
     const removeOrderedItem = (e) => {
-        const revisedList = orderList.filter((item) => { return item !== e.target.innerText
-        });
+        const revisedList = orderList.filter((item) => { return item !== e.target.innerText});
         setOrderList(revisedList);
+        console.log(e.target)
     }
 
     const clearOrder = () => {
         setOrderList([]);
         setBill(0);
-    }
+        setOrderQuantity({
+           "The Original": 0,
+            "Latte": 0,
+            "Espresso": 0,
+            "Americano": 0,
+            "Cheddar Egg on Bagel": 0,
+            "Ham & Cheese Croissant": 0,
+            "Omelette": 0,
+            "Oatmeal": 0,
+            "Assorted Donuts": 0,
+            "New York Bagels": 0,
+            "Ciabatta Bread": 0,
+            "Cheddar & Garlic Bread": 0         
+        });
+    };
 
     const [modal, setModal] = useState(false);
 
 
-    return <>
+    return (<>
         <nav className="order-nav">
             <div className="back-link-position">
                 <Link to="/" className="back-link"><h1 className="back-title">Back</h1></Link>
@@ -99,15 +113,18 @@ const Order = ({orderList, setOrderList, bill, setBill}) => {
                 </div>
                 
                 {orderList.map((item) => {
-                    return <p className="current-order-item"
-                        onClick={removeOrderedItem}>
-                        {item} ({orderQuantity[item]})
-                    </p>
+                    return <div className="order-name-number">
+                        <p className="current-order-item"
+                            onClick={removeOrderedItem}>
+                            {item}
+                        </p>
+                        <p>({orderQuantity[item]})</p>
+                    </div>
                 })}
 
             </div>
         </section>
-    </>
+    </>)
 }
 
 export default Order;
