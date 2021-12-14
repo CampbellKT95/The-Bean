@@ -5,6 +5,8 @@ import {Link} from "react-router-dom";
 
 const Order = ({orderList, setOrderList, bill, setBill}) => {
 
+    const [orderInProgress, setOrderInProgress] = useState({})
+
     const [orderQuantity, setOrderQuantity] = useState({
         "The Original": 0,
         "Latte": 0,
@@ -34,6 +36,10 @@ const Order = ({orderList, setOrderList, bill, setBill}) => {
                         return [...orderList, orderedItem]
                     })
 
+                    setOrderInProgress((orderInProgress) => {
+                        return {...orderInProgress, [orderedItem]: orderedPrice}
+                    })
+
                     setBill(bill + orderedPrice)
 
                     setOrderQuantity({...orderQuantity, [orderedItem]: orderQuantity[orderedItem] += 1});
@@ -49,7 +55,14 @@ const Order = ({orderList, setOrderList, bill, setBill}) => {
     const removeOrderedItem = (e) => {
         const revisedList = orderList.filter((item) => { return item !== e.target.innerText});
         setOrderList(revisedList);
-        console.log(e.target)
+
+        const removedItem = orderList.filter((item) => {return item === e.target.innerText})
+
+        setBill(bill - orderInProgress[removedItem])
+
+
+        //find price of removedItem by looping through menuData? 
+        //then remove price from bill with setBill
     }
 
     const clearOrder = () => {
