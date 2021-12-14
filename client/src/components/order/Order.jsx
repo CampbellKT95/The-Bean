@@ -6,18 +6,18 @@ import {Link} from "react-router-dom";
 const Order = ({orderList, setOrderList, bill, setBill}) => {
 
     const [orderQuantity, setOrderQuantity] = useState({
-        "original": 0,
-        "latte": 0,
-        "espresso": 0,
-        "americano": 0,
-        "cheddarEgg": 0,
-        "hamCheese": 0,
-        "omlette": 0,
-        "oatmeal": 0,
-        "donuts": 0,
-        "bagels": 0,
-        "ciabatta": 0,
-        "cheddarGarlic": 0
+        "The Original": 0,
+        "Latte": 0,
+        "Espresso": 0,
+        "Americano": 0,
+        "Cheddar Egg on Bagel": 0,
+        "Ham & Cheese Croissant": 0,
+        "Omelette": 0,
+        "Oatmeal": 0,
+        "Assorted Donuts": 0,
+        "New York Bagels": 0,
+        "Ciabatta Bread": 0,
+        "Cheddar & Garlic Bread": 0
     })
 
     const handleClick = (e) => {
@@ -30,15 +30,13 @@ const Order = ({orderList, setOrderList, bill, setBill}) => {
                     let orderedItem = menuData[i][j].name
                     let orderedPrice = menuData[i][j].price
 
-                    let orderedNumber = menuData[i][j].state
-
                     setOrderList((orderList) => {
                         return [...orderList, orderedItem]
                     })
 
                     setBill(bill + orderedPrice)
 
-                    setOrderQuantity({...orderQuantity, [orderedNumber]: orderQuantity[orderedNumber] += 1});
+                    setOrderQuantity({...orderQuantity, [orderedItem]: orderQuantity[orderedItem] += 1});
                 }
             }
         }
@@ -101,8 +99,10 @@ const Order = ({orderList, setOrderList, bill, setBill}) => {
                 </div>
                 
                 {orderList.map((item) => {
-                    return <p className="current-order-item" id={item.id}
-                        onClick={removeOrderedItem}>{item} {orderQuantity[item.state]}</p>
+                    return <p className="current-order-item"
+                        onClick={removeOrderedItem}>
+                        {item} ({orderQuantity[item]})
+                    </p>
                 })}
 
             </div>
