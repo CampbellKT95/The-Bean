@@ -38,7 +38,7 @@ const Order = ({orderList, setOrderList, bill, setBill}) => {
 
                     setBill(bill + orderedPrice)
 
-                    setOrderQuantity({...orderQuantity, [orderedNumber]: orderQuantity.orderedNumber++});
+                    setOrderQuantity({...orderQuantity, [orderedNumber]: orderQuantity[orderedNumber] += 1});
                 }
             }
         }
