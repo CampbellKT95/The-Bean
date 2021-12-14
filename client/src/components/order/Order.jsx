@@ -5,7 +5,9 @@ import {Link} from "react-router-dom";
 
 const Order = ({orderList, setOrderList, bill, setBill}) => {
 
-    const [orderInProgress, setOrderInProgress] = useState({})
+    const [orderInProgress, setOrderInProgress] = useState({});
+
+    const [order, setOrder] = useState([]);
 
     const [orderQuantity, setOrderQuantity] = useState({
         "The Original": 0,
@@ -43,30 +45,35 @@ const Order = ({orderList, setOrderList, bill, setBill}) => {
                     setBill(bill + orderedPrice)
 
                     setOrderQuantity({...orderQuantity, [orderedItem]: orderQuantity[orderedItem] += 1});
+
+                    if (order.includes(orderedItem)) {
+                        console.log("item already in order")
+                    } else {
+                        setOrder([...order, orderedItem])
+                    }
                 }
             }
         }
     }
 
     useEffect(() => {
-        console.log(orderList)
-    }, [orderList, orderQuantity]);
+        console.log(order)
+    }, [order, orderQuantity]);
 
     const removeOrderedItem = (e) => {
-        const revisedList = orderList.filter((item) => { return item !== e.target.innerText});
-        setOrderList(revisedList);
+        const revisedList = order.filter((item) => { return item !== e.target.innerText});
+        setOrder(revisedList);
 
-        const removedItem = orderList.filter((item) => {return item === e.target.innerText})
+        const removedItem = order.filter((item) => {return item === e.target.innerText})
 
-        setBill(bill - orderInProgress[removedItem])
+        setBill(bill - (orderInProgress[removedItem] * orderQuantity[removedItem]))
 
-
-        //find price of removedItem by looping through menuData? 
-        //then remove price from bill with setBill
+        setOrderQuantity({...orderQuantity, [removedItem]: 0})
     }
 
     const clearOrder = () => {
         setOrderList([]);
+        setOrder([]);
         setBill(0);
         setOrderQuantity({
            "The Original": 0,
@@ -125,7 +132,7 @@ const Order = ({orderList, setOrderList, bill, setBill}) => {
                     <Link to="/stripecontainer"><button className="purchase-btn">Purchase</button></Link>
                 </div>
                 
-                {orderList.map((item) => {
+                {order.map((item) => {
                     return <div className="order-name-number">
                         <p className="current-order-item"
                             onClick={removeOrderedItem}>
