@@ -87,6 +87,7 @@ const Confirmation = ({orderList, bill}) => {
             :
             <div>
                 <h2>Payment complete!</h2>
+                <p>Confirmation Code: {Math.floor(Math.random())}</p>
             </div>
             }
 

@@ -1,13 +1,13 @@
-.menu-exp-container {
+.menu-container {
   background-image: url("https://images.unsplash.com/photo-1508615039623-a25605d2b022?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80");
 }
 
-.exp-menu {
+.menu {
   display: flex;
   flex-direction: column;
 }
 
-.food-container {
+.menu-card {
   transition: all linear 0.2s;
   background-color: white;
   border: 1px solid black;
@@ -17,7 +17,7 @@
   padding-bottom: 1.5rem;
 }
 
-.exp-menu-title {
+.menu-title {
   font-size: 3rem;
   border-bottom: 1px solid black;
   width: 70%;
@@ -26,45 +26,35 @@
   color: #d9cab3;
 }
 
-.exp-desc-price {
+.menu-item {
+  font-size: 1.5rem;
+  text-align: start;
+  margin-left: 1.5rem;
+}
+
+.desc-price {
   display: grid;
   grid-template-columns: 1fr 0.25fr;
   font-size: 1.15rem;
   justify-content: start;
 }
 
-.exp-menu-item {
-  font-size: 1.5rem;
-  text-align: start;
-  margin-left: 1.5rem;
-}
-
-.exp-item-description {
+.item-description {
   justify-content: start;
   display: inline-block;
 }
 
-.exp-price {
-}
-
-.exp-img {
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  width: 100%;
-}
-
 @media screen and (min-width: 800px) {
-  .menu-exp-container {
+  .menu-container {
     background-image: url("https://images.unsplash.com/photo-1508615039623-a25605d2b022?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80");
   }
 
-  .exp-menu {
+  .menu {
     display: flex;
     flex-direction: row;
   }
 
-  .food-container {
+  .menu-card {
     transition: all linear 0.2s;
     background-color: white;
     border: 1px solid black;
@@ -74,16 +64,16 @@
     padding-bottom: 1.5rem;
   }
 
-  .food-container:hover {
+  .menu-card:hover {
     transition: all linear 0.2s;
     transform: translateY(-1rem);
   }
 
-  .food-container:hover ~ .food-container {
+  .menu-card:hover ~ .menu-card {
     transition: all linear 0.2s;
   }
 
-  .exp-menu-title {
+  .menu-title {
     font-size: 3rem;
     border-bottom: 1px solid black;
     width: 70%;
@@ -92,24 +82,21 @@
     color: #d9cab3;
   }
 
-  .exp-desc-price {
+  .desc-price {
     display: grid;
     grid-template-columns: 1fr 0.25fr;
     font-size: 1.15rem;
     justify-content: start;
   }
 
-  .exp-menu-item {
+  .menu-item {
     font-size: 1.5rem;
     text-align: start;
     margin-left: 1.5rem;
   }
 
-  .exp-item-description {
+  .item-description {
     justify-content: start;
     display: inline-block;
-  }
-
-  .exp-price {
   }
 }

@@ -11,44 +11,44 @@ const Menu = () => {
     }, [])
 
     return (
-        <section className="menu-exp-container">
-            <div className="exp-menu">
-                <div className="food-container">
-                    <h2 className="exp-menu-title">Coffee</h2>
+        <section className="menu-container">
+            <div className="menu">
+                <div className="menu-card">
+                    <h2 className="menu-title">Coffee</h2>
                     
                     {menuData[0].map((item) => {
-                            return (<div className="exp-container">
-                                <h3 className="exp-menu-item">{item.name}</h3>
-                                <div className="exp-desc-price">
-                                    <p className="exp-item-description">{item.description}</p>
-                                    <p className="exp-price">{item.price}</p>
+                            return (<div className="">
+                                <h3 className="menu-item">{item.name}</h3>
+                                <div className="desc-price">
+                                    <p className="item-description">{item.description}</p>
+                                    <p>{item.price}</p>
                                 </div>
                             </div>
                             )})}
                 </div>
-                <div className="food-container">
-                        <h2 className="exp-menu-title">Breakfast</h2>
+                <div className="menu-card">
+                        <h2 className="menu-title">Breakfast</h2>
 
                         {menuData[1].map((item) => {
-                            return (<div className="exp-container">
-                            <h3 className="exp-menu-item">{item.name}</h3>
-                                <div className="exp-desc-price">
-                                    <p className="exp-item-description">{item.description}</p>
-                                    <p className="exp-price">{item.price}</p>
+                            return (<div className="">
+                            <h3 className="menu-item">{item.name}</h3>
+                                <div className="desc-price">
+                                    <p className="item-description">{item.description}</p>
+                                    <p>{item.price}</p>
                                 </div>
                             </div>
                             )
                         })}                    
                 </div>
-                <div className="food-container">
-                    <h2 className="exp-menu-title">Baked Goods</h2>
+                <div className="menu-card">
+                    <h2 className="menu-title">Baked Goods</h2>
 
                     {menuData[2].map((item) => {
-                            return (<div className="exp-container">
-                            <h3 className="exp-menu-item">{item.name}</h3>
-                            <div className="exp-desc-price">
-                                <p className="exp-item-description">{item.description}</p>
-                                <p className="exp-price">{item.price}</p>
+                            return (<div className="">
+                            <h3 className="menu-item">{item.name}</h3>
+                            <div className="desc-price">
+                                <p className="item-description">{item.description}</p>
+                                <p>{item.price}</p>
                             </div>
                         </div>
                         )
